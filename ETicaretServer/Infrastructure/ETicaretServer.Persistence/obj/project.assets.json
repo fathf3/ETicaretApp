@@ -364,7 +364,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "ETicaretServer.Domain": "1.0.0"
+          "ETicaretServer.Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "6.0.35"
         },
         "compile": {
           "bin/placeholder/ETicaretServer.Application.dll": {}

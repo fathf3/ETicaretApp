@@ -239,7 +239,8 @@
       "System.Runtime.CompilerServices.Unsafe/6.0.0": {},
       "ETicaretServer.Application/1.0.0": {
         "dependencies": {
-          "ETicaretServer.Domain": "1.0.0"
+          "ETicaretServer.Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "6.0.35"
         },
         "runtime": {
           "ETicaretServer.Application.dll": {}

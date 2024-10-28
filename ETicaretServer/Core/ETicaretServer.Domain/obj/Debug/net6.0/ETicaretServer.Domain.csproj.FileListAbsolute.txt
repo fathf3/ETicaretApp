@@ -9,3 +9,4 @@ D:\Code\CSharp\ETicaretApp\ETicaretServer\Core\ETicaretServer.Domain\obj\Debug\n
 D:\Code\CSharp\ETicaretApp\ETicaretServer\Core\ETicaretServer.Domain\obj\Debug\net6.0\refint\ETicaretServer.Domain.dll
 D:\Code\CSharp\ETicaretApp\ETicaretServer\Core\ETicaretServer.Domain\obj\Debug\net6.0\ETicaretServer.Domain.pdb
 D:\Code\CSharp\ETicaretApp\ETicaretServer\Core\ETicaretServer.Domain\obj\Debug\net6.0\ref\ETicaretServer.Domain.dll
+D:\Code\CSharp\ETicaretApp\ETicaretServer\Core\ETicaretServer.Domain\obj\Debug\net6.0\ETicaretServer.Domain.sourcelink.json
