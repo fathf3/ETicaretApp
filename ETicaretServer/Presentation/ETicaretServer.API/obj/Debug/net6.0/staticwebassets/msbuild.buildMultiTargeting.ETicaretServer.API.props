@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\ETicaretServer.API.props" />
+</Project>

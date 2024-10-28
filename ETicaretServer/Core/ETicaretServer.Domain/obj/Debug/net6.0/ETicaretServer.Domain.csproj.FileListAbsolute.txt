@@ -1,0 +1,11 @@
+D:\Code\CSharp\ETicaretApp\ETicaretServer\Core\ETicaretServer.Domain\bin\Debug\net6.0\ETicaretServer.Domain.deps.json
+D:\Code\CSharp\ETicaretApp\ETicaretServer\Core\ETicaretServer.Domain\bin\Debug\net6.0\ETicaretServer.Domain.dll
+D:\Code\CSharp\ETicaretApp\ETicaretServer\Core\ETicaretServer.Domain\bin\Debug\net6.0\ETicaretServer.Domain.pdb
+D:\Code\CSharp\ETicaretApp\ETicaretServer\Core\ETicaretServer.Domain\obj\Debug\net6.0\ETicaretServer.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Code\CSharp\ETicaretApp\ETicaretServer\Core\ETicaretServer.Domain\obj\Debug\net6.0\ETicaretServer.Domain.AssemblyInfoInputs.cache
+D:\Code\CSharp\ETicaretApp\ETicaretServer\Core\ETicaretServer.Domain\obj\Debug\net6.0\ETicaretServer.Domain.AssemblyInfo.cs
+D:\Code\CSharp\ETicaretApp\ETicaretServer\Core\ETicaretServer.Domain\obj\Debug\net6.0\ETicaretServer.Domain.csproj.CoreCompileInputs.cache
+D:\Code\CSharp\ETicaretApp\ETicaretServer\Core\ETicaretServer.Domain\obj\Debug\net6.0\ETicaretServer.Domain.dll
+D:\Code\CSharp\ETicaretApp\ETicaretServer\Core\ETicaretServer.Domain\obj\Debug\net6.0\refint\ETicaretServer.Domain.dll
+D:\Code\CSharp\ETicaretApp\ETicaretServer\Core\ETicaretServer.Domain\obj\Debug\net6.0\ETicaretServer.Domain.pdb
+D:\Code\CSharp\ETicaretApp\ETicaretServer\Core\ETicaretServer.Domain\obj\Debug\net6.0\ref\ETicaretServer.Domain.dll
