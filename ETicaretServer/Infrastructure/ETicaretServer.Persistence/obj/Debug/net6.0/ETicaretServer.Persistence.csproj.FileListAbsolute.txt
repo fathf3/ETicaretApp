@@ -17,3 +17,4 @@ D:\Code\CSharp\ETicaretApp\ETicaretServer\Infrastructure\ETicaretServer.Persiste
 D:\Code\CSharp\ETicaretApp\ETicaretServer\Infrastructure\ETicaretServer.Persistence\obj\Debug\net6.0\ref\ETicaretServer.Persistence.dll
 D:\Code\CSharp\ETicaretApp\ETicaretServer\Infrastructure\ETicaretServer.Persistence\bin\Debug\net6.0\ETicaretServer.Persistence.runtimeconfig.json
 D:\Code\CSharp\ETicaretApp\ETicaretServer\Infrastructure\ETicaretServer.Persistence\obj\Debug\net6.0\ETicaretServer.Persistence.genruntimeconfig.cache
+D:\Code\CSharp\ETicaretApp\ETicaretServer\Infrastructure\ETicaretServer.Persistence\obj\Debug\net6.0\ETicaretServer.Persistence.sourcelink.json

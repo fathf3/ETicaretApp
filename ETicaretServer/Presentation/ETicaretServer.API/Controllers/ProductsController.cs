@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using ETicaretServer.Application.Repositories;
+using Microsoft.AspNetCore.Mvc;
 
 namespace ETicaretServer.API.Controllers
 {
@@ -6,17 +7,26 @@ namespace ETicaretServer.API.Controllers
     [ApiController]
     public class ProductsController : ControllerBase
     {
-        //private readonly IProductService _productService;
+        private readonly IProductReadRepository _productReadRepository;
+        private readonly IProductWriteRepository _productWriteRepository;
 
-        //public ProductsController(IProductService productService)
-        //{
-        //    _productService = productService;
-        //}
+        public ProductsController(IProductReadRepository productReadRepository, IProductWriteRepository productWriteRepository)
+        {
+            _productReadRepository = productReadRepository;
+            _productWriteRepository = productWriteRepository;
+        }
 
-        //[HttpGet]
-        //public IActionResult Get()
-        //{
-        //    return Ok(_productService.GetProducts());
-        //}
+        [HttpGet] 
+        public async Task Get()
+        {
+            await _productWriteRepository.AddRangeAsync(new()
+            {
+              new() { Id= Guid.NewGuid(), Name="Product 1", Price=100, CreatedDate=DateTime.UtcNow, Stock = 10 },
+              new() { Id= Guid.NewGuid(), Name="Product 2", Price=100, CreatedDate=DateTime.UtcNow, Stock = 100 },
+              new() { Id= Guid.NewGuid(), Name="Product 3", Price=100, CreatedDate=DateTime.UtcNow, Stock = 1000 },
+              new() { Id= Guid.NewGuid(), Name="Product 4", Price=100, CreatedDate=DateTime.UtcNow, Stock = 1000 },
+            });
+            await _productWriteRepository.SaveAsync();
+        }
     }
 }
