@@ -49,3 +49,9 @@ D:\Code\CSharp\ETicaretApp\ETicaretServer\Presentation\ETicaretServer.API\bin\De
 D:\Code\CSharp\ETicaretApp\ETicaretServer\Presentation\ETicaretServer.API\bin\Debug\net6.0\Humanizer.dll
 D:\Code\CSharp\ETicaretApp\ETicaretServer\Presentation\ETicaretServer.API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
 D:\Code\CSharp\ETicaretApp\ETicaretServer\Presentation\ETicaretServer.API\obj\Debug\net6.0\ETicaretServer.API.sourcelink.json
+D:\Code\CSharp\ETicaretApp\ETicaretServer\Presentation\ETicaretServer.API\bin\Debug\net6.0\FluentValidation.dll
+D:\Code\CSharp\ETicaretApp\ETicaretServer\Presentation\ETicaretServer.API\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
+D:\Code\CSharp\ETicaretApp\ETicaretServer\Presentation\ETicaretServer.API\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
+D:\Code\CSharp\ETicaretApp\ETicaretServer\Presentation\ETicaretServer.API\bin\Debug\net6.0\ETicaretServer.Infrastructure.dll
+D:\Code\CSharp\ETicaretApp\ETicaretServer\Presentation\ETicaretServer.API\bin\Debug\net6.0\ETicaretServer.Infrastructure.pdb
+D:\Code\CSharp\ETicaretApp\ETicaretServer\Presentation\ETicaretServer.API\bin\Debug\net6.0\ETicaretServer.API.staticwebassets.runtime.json
