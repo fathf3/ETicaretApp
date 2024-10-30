@@ -20,7 +20,7 @@ namespace ETicaretServer.Persistence.Repositories
             _context = context;
         }
 
-        public DbSet<T> Table => _context.Set<T>();
+        public  DbSet<T> Table => _context.Set<T>();
 
         public async Task<bool> AddAsync(T entity)
         {
