@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "OnxTsZ5cuobmblfpcjioVPZGcjEl5XP1KYc10Q6sLwQ=",
+  "Hash": "e4lqNZokIfkuUZOVFNNubC6ZK1CAWDUYQtp0TJ/yXrE=",
   "Source": "ETicaretServer.API",
   "BasePath": "_content/ETicaretServer.API",
   "Mode": "Default",
@@ -15,63 +15,5 @@
       "Pattern": "**"
     }
   ],
-  "Assets": [
-    {
-      "Identity": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Presentation\\ETicaretServer.API\\wwwroot\\resource\\product-images\\1611482688.jpg",
-      "SourceId": "ETicaretServer.API",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Presentation\\ETicaretServer.API\\wwwroot\\",
-      "BasePath": "_content/ETicaretServer.API",
-      "RelativePath": "resource/product-images/1611482688.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\resource\\product-images\\1611482688.jpg"
-    },
-    {
-      "Identity": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Presentation\\ETicaretServer.API\\wwwroot\\resource\\product-images\\638389956.jpg",
-      "SourceId": "ETicaretServer.API",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Presentation\\ETicaretServer.API\\wwwroot\\",
-      "BasePath": "_content/ETicaretServer.API",
-      "RelativePath": "resource/product-images/638389956.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\resource\\product-images\\638389956.jpg"
-    },
-    {
-      "Identity": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Presentation\\ETicaretServer.API\\wwwroot\\resource\\product-images\\908934531.jpg",
-      "SourceId": "ETicaretServer.API",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Presentation\\ETicaretServer.API\\wwwroot\\",
-      "BasePath": "_content/ETicaretServer.API",
-      "RelativePath": "resource/product-images/908934531.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\resource\\product-images\\908934531.jpg"
-    }
-  ]
+  "Assets": []
 }
