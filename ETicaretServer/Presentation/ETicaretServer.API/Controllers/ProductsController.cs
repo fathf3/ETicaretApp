@@ -1,6 +1,7 @@
 ﻿using ETicaretServer.Application.Repositories;
 using ETicaretServer.Application.Services;
 using ETicaretServer.Application.ViewModels.Products;
+using E = ETicaretServer.Domain.Entities;
 using Microsoft.AspNetCore.Mvc;
 using System.Net;
 
@@ -14,13 +15,21 @@ namespace ETicaretServer.API.Controllers
         private readonly IProductWriteRepository _productWriteRepository;
         private readonly IWebHostEnvironment _webHostEnvironment;
         private readonly IFileService _fileService;
+        private readonly IFileWriteRepository _fileWriteRepository;
+        private readonly IFileReadRepository _fileReadRepository;
+        private readonly IProductImageFileReadRepository _productImageFileReadRepository;
+        private readonly IProductImageFileWriteRepository _productImageFileWriteRepository;
 
-        public ProductsController(IProductReadRepository productReadRepository, IProductWriteRepository productWriteRepository, IWebHostEnvironment webHostEnvironment, IFileService fileService)
+        public ProductsController(IProductReadRepository productReadRepository, IProductWriteRepository productWriteRepository, IWebHostEnvironment webHostEnvironment, IFileService fileService, IFileWriteRepository fileWriteRepository, IFileReadRepository fileReadRepository, IProductImageFileReadRepository productImageFileReadRepository, IProductImageFileWriteRepository productImageFileWriteRepository)
         {
             _productReadRepository = productReadRepository;
             _productWriteRepository = productWriteRepository;
             _webHostEnvironment = webHostEnvironment;
             _fileService = fileService;
+            _fileWriteRepository = fileWriteRepository;
+            _fileReadRepository = fileReadRepository;
+            _productImageFileReadRepository = productImageFileReadRepository;
+            _productImageFileWriteRepository = productImageFileWriteRepository;
         }
 
         [HttpGet]
@@ -51,9 +60,24 @@ namespace ETicaretServer.API.Controllers
         {
             //todo formFiles -> Request.Form.Files
 
-            await _fileService.UploadAsync("resource/product-images", formFiles);
-          
-            return Ok("Gorsel Eklendi");
+            //var datas = await _fileService.UploadAsync("resource/product-images", formFiles);
+            //_productImageFileWriteRepository.AddRangeAsync(datas.Select(d => new ProductImageFile()
+            //{
+            //    FileName = d.fileName,
+            //    Path = d.path
+            //}).ToList());
+            //await _productImageFileWriteRepository.SaveAsync();
+
+            var datas = await _fileService.UploadAsync("resource/files", formFiles);
+            await _fileWriteRepository.AddRangeAsync(datas.Select(d => new E.File()
+            {
+                FileName = d.fileName,
+                Path = d.path,
+                
+                    
+            }).ToList());
+
+            return Ok("Dosya Eklendi");
         }
     }
 }
