@@ -1,7 +1,7 @@
-﻿using ETicaretServer.Application.Repositories;
-using ETicaretServer.Application.Services;
+﻿using ETicaretServer.Application.Abstractions.Storage;
+using ETicaretServer.Application.Repositories;
 using ETicaretServer.Application.ViewModels.Products;
-using E = ETicaretServer.Domain.Entities;
+using ETicaretServer.Domain.Entities;
 using Microsoft.AspNetCore.Mvc;
 using System.Net;
 
@@ -14,22 +14,28 @@ namespace ETicaretServer.API.Controllers
         private readonly IProductReadRepository _productReadRepository;
         private readonly IProductWriteRepository _productWriteRepository;
         private readonly IWebHostEnvironment _webHostEnvironment;
-        private readonly IFileService _fileService;
+        
         private readonly IFileWriteRepository _fileWriteRepository;
         private readonly IFileReadRepository _fileReadRepository;
+
         private readonly IProductImageFileReadRepository _productImageFileReadRepository;
         private readonly IProductImageFileWriteRepository _productImageFileWriteRepository;
 
-        public ProductsController(IProductReadRepository productReadRepository, IProductWriteRepository productWriteRepository, IWebHostEnvironment webHostEnvironment, IFileService fileService, IFileWriteRepository fileWriteRepository, IFileReadRepository fileReadRepository, IProductImageFileReadRepository productImageFileReadRepository, IProductImageFileWriteRepository productImageFileWriteRepository)
+        private readonly IStorageService _storageService;
+
+        public ProductsController(IProductReadRepository productReadRepository, IProductWriteRepository productWriteRepository, IWebHostEnvironment webHostEnvironment, IFileWriteRepository fileWriteRepository, IFileReadRepository fileReadRepository, IProductImageFileReadRepository productImageFileReadRepository, IProductImageFileWriteRepository productImageFileWriteRepository, IStorageService storageService)
         {
             _productReadRepository = productReadRepository;
             _productWriteRepository = productWriteRepository;
             _webHostEnvironment = webHostEnvironment;
-            _fileService = fileService;
+
             _fileWriteRepository = fileWriteRepository;
             _fileReadRepository = fileReadRepository;
+
             _productImageFileReadRepository = productImageFileReadRepository;
             _productImageFileWriteRepository = productImageFileWriteRepository;
+
+            _storageService = storageService;
         }
 
         [HttpGet]
@@ -58,6 +64,17 @@ namespace ETicaretServer.API.Controllers
         [HttpPost("action")]
         public async Task<IActionResult> Upload(IFormFileCollection formFiles)
         {
+
+            var datas = await _storageService.UploadAsync("resource/files", formFiles);
+            await _productImageFileWriteRepository.AddRangeAsync(datas.Select(d => new ProductImageFile()
+            {
+                FileName = d.fileName,
+                Path = d.path,
+                Storage = _storageService.StorageName,
+            }).ToList());
+            await _productImageFileWriteRepository.SaveAsync();
+
+
             //todo formFiles -> Request.Form.Files
 
             //var datas = await _fileService.UploadAsync("resource/product-images", formFiles);
@@ -68,14 +85,14 @@ namespace ETicaretServer.API.Controllers
             //}).ToList());
             //await _productImageFileWriteRepository.SaveAsync();
 
-            var datas = await _fileService.UploadAsync("resource/files", formFiles);
-            await _fileWriteRepository.AddRangeAsync(datas.Select(d => new E.File()
-            {
-                FileName = d.fileName,
-                Path = d.path,
-                
-                    
-            }).ToList());
+            //var datas = await _fileService.UploadAsync("resource/files", formFiles);
+            //await _fileWriteRepository.AddRangeAsync(datas.Select(d => new E.File()
+            //{
+            //    FileName = d.fileName,
+            //    Path = d.path,
+
+
+            //}).ToList());
 
             return Ok("Dosya Eklendi");
         }

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "QrlNOjM+hlmtIzAZJ31NH5G8dLt/mVhzk4BUThErRxo=",
+  "Hash": "e4lqNZokIfkuUZOVFNNubC6ZK1CAWDUYQtp0TJ/yXrE=",
   "Source": "ETicaretServer.API",
   "BasePath": "_content/ETicaretServer.API",
   "Mode": "Default",
@@ -15,44 +15,5 @@
       "Pattern": "**"
     }
   ],
-  "Assets": [
-    {
-      "Identity": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Presentation\\ETicaretServer.API\\wwwroot\\resource\\product-images\\horse.jpg",
-      "SourceId": "ETicaretServer.API",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Presentation\\ETicaretServer.API\\wwwroot\\",
-      "BasePath": "_content/ETicaretServer.API",
-      "RelativePath": "resource/product-images/horse.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\resource\\product-images\\horse.jpg"
-    },
-    {
-      "Identity": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Presentation\\ETicaretServer.API\\wwwroot\\resource\\product-images\\horse-2.jpg",
-      "SourceId": "ETicaretServer.API",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Presentation\\ETicaretServer.API\\wwwroot\\",
-      "BasePath": "_content/ETicaretServer.API",
-      "RelativePath": "resource/product-images/horse-2.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\resource\\product-images\\horse-2.jpg"
-    }
-  ]
+  "Assets": []
 }
