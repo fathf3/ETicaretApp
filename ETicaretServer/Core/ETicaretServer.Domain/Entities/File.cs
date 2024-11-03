@@ -12,7 +12,7 @@ namespace ETicaretServer.Domain.Entities
     {
         public string FileName { get; set; }
         public string Path { get; set; }
-
+        public string Storage {  get; set; }
 
 
         [NotMapped] // -> migrate ederken UpdatedDate eklenmez! -> veritabanına eklenmez

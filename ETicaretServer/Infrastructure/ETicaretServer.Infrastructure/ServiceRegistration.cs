@@ -1,5 +1,7 @@
-﻿using ETicaretServer.Application.Services;
-using ETicaretServer.Infrastructure.Services;
+﻿using ETicaretServer.Application.Abstractions.Storage;
+using ETicaretServer.Infrastructure.Enums;
+using ETicaretServer.Infrastructure.Services.Storage;
+using ETicaretServer.Infrastructure.Services.Storage.Local;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace ETicaretServer.Infrastructure
@@ -8,8 +10,31 @@ namespace ETicaretServer.Infrastructure
     {
         public static void AddInfrastructureServices(this IServiceCollection services)
         {
-            services.AddScoped<IFileService, FileService>();
+            services.AddScoped<IStorageService, StorageService>();
+
         }
 
+        public static void AddStorage<T>(this IServiceCollection services) where T : class, IStorage
+        {
+            services.AddScoped<IStorage, T>();
+        }
+        public static void AddStorage<T>(this IServiceCollection services, StorageType storageType)
+        {
+            switch (storageType)
+            {
+                case StorageType.Local:
+                    services.AddScoped<IStorage, LocalStorage>();
+                    break;
+                case StorageType.Azure:
+                    //services.AddScoped<IStorage, AzureStorage>();
+                    break;
+                case StorageType.AWS:
+                    //services.AddScoped<IStorage, AWSStorage>();
+                    break;
+                default:
+                    services.AddScoped<IStorage, LocalStorage>();
+                    break;
+            }
+        }
     }
 }
