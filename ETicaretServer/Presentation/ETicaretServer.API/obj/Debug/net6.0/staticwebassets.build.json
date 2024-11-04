@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "e4lqNZokIfkuUZOVFNNubC6ZK1CAWDUYQtp0TJ/yXrE=",
+  "Hash": "9YIXjAZytOU7uvv4+CoqC1OvkRrlUHHyL2r4wWqMFVU=",
   "Source": "ETicaretServer.API",
   "BasePath": "_content/ETicaretServer.API",
   "Mode": "Default",
@@ -15,5 +15,63 @@
       "Pattern": "**"
     }
   ],
-  "Assets": []
+  "Assets": [
+    {
+      "Identity": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Presentation\\ETicaretServer.API\\wwwroot\\resource\\files\\formFiles",
+      "SourceId": "ETicaretServer.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Presentation\\ETicaretServer.API\\wwwroot\\",
+      "BasePath": "_content/ETicaretServer.API",
+      "RelativePath": "resource/files/formFiles",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\resource\\files\\formFiles"
+    },
+    {
+      "Identity": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Presentation\\ETicaretServer.API\\wwwroot\\resource\\files\\horse.jpg",
+      "SourceId": "ETicaretServer.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Presentation\\ETicaretServer.API\\wwwroot\\",
+      "BasePath": "_content/ETicaretServer.API",
+      "RelativePath": "resource/files/horse.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\resource\\files\\horse.jpg"
+    },
+    {
+      "Identity": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Presentation\\ETicaretServer.API\\wwwroot\\resource\\files\\sea.jpg",
+      "SourceId": "ETicaretServer.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Presentation\\ETicaretServer.API\\wwwroot\\",
+      "BasePath": "_content/ETicaretServer.API",
+      "RelativePath": "resource/files/sea.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\resource\\files\\sea.jpg"
+    }
+  ]
 }
