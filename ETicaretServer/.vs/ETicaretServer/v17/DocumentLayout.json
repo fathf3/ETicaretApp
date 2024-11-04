@@ -7,8 +7,8 @@
       "RelativeMoniker": "D:0:0:{8DECBB38-B99E-407C-8A1C-511ED09CD503}|Presentation\\ETicaretServer.API\\ETicaretServer.API.csproj|solutionrelative:presentation\\eticaretserver.api\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{74713FF0-2A03-4EAF-B5F5-F1F3F2542B12}|Infrastructure\\ETicaretServer.Infrastructure\\ETicaretServer.Infrastructure.csproj|d:\\code\\csharp\\eticaretapp\\eticaretserver\\infrastructure\\eticaretserver.infrastructure\\services\\storage\\local\\localstorage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{74713FF0-2A03-4EAF-B5F5-F1F3F2542B12}|Infrastructure\\ETicaretServer.Infrastructure\\ETicaretServer.Infrastructure.csproj|solutionrelative:infrastructure\\eticaretserver.infrastructure\\services\\storage\\local\\localstorage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8DECBB38-B99E-407C-8A1C-511ED09CD503}|Presentation\\ETicaretServer.API\\ETicaretServer.API.csproj|d:\\code\\csharp\\eticaretapp\\eticaretserver\\presentation\\eticaretserver.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8DECBB38-B99E-407C-8A1C-511ED09CD503}|Presentation\\ETicaretServer.API\\ETicaretServer.API.csproj|solutionrelative:presentation\\eticaretserver.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,20 +30,19 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "LocalStorage.cs",
-              "DocumentMoniker": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Infrastructure\\ETicaretServer.Infrastructure\\Services\\Storage\\Local\\LocalStorage.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\ETicaretServer.Infrastructure\\Services\\Storage\\Local\\LocalStorage.cs",
-              "ToolTip": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Infrastructure\\ETicaretServer.Infrastructure\\Services\\Storage\\Local\\LocalStorage.cs",
-              "RelativeToolTip": "Infrastructure\\ETicaretServer.Infrastructure\\Services\\Storage\\Local\\LocalStorage.cs",
-              "ViewState": "AQIAACYAAAAAAAAAAAA1wDQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-03T22:37:04.103Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Document",
@@ -53,9 +52,22 @@
               "RelativeDocumentMoniker": "Presentation\\ETicaretServer.API\\Controllers\\ProductsController.cs",
               "ToolTip": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Presentation\\ETicaretServer.API\\Controllers\\ProductsController.cs",
               "RelativeToolTip": "Presentation\\ETicaretServer.API\\Controllers\\ProductsController.cs",
-              "ViewState": "AQIAAEAAAAAAAAAAAAAywEcAAAAeAAAA",
+              "ViewState": "AQIAACYAAAAAAAAAAAAywE0AAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-03T18:00:18.292Z",
+              "WhenOpened": "2024-11-04T01:31:58.102Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Presentation\\ETicaretServer.API\\appsettings.json",
+              "RelativeDocumentMoniker": "Presentation\\ETicaretServer.API\\appsettings.json",
+              "ToolTip": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Presentation\\ETicaretServer.API\\appsettings.json",
+              "RelativeToolTip": "Presentation\\ETicaretServer.API\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-04T01:30:59.531Z",
               "EditorCaption": ""
             }
           ]

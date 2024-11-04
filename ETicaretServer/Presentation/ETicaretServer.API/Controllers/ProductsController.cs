@@ -77,22 +77,15 @@ namespace ETicaretServer.API.Controllers
 
             //todo formFiles -> Request.Form.Files
 
-            //var datas = await _fileService.UploadAsync("resource/product-images", formFiles);
-            //_productImageFileWriteRepository.AddRangeAsync(datas.Select(d => new ProductImageFile()
-            //{
-            //    FileName = d.fileName,
-            //    Path = d.path
-            //}).ToList());
-            //await _productImageFileWriteRepository.SaveAsync();
+            var datas2 = await _fileWriteRepository.UploadAsync("resource/product-images", formFiles);
+            await _productImageFileWriteRepository.AddRangeAsync(datas.Select(d => new ProductImageFile()
+            {
+                FileName = d.fileName,
+                Path = d.path
+            }).ToList());
+            await _productImageFileWriteRepository.SaveAsync();
 
-            //var datas = await _fileService.UploadAsync("resource/files", formFiles);
-            //await _fileWriteRepository.AddRangeAsync(datas.Select(d => new E.File()
-            //{
-            //    FileName = d.fileName,
-            //    Path = d.path,
-
-
-            //}).ToList());
+         
 
             return Ok("Dosya Eklendi");
         }
