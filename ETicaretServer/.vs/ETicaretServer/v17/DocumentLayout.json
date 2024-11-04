@@ -3,11 +3,15 @@
   "WorkspaceRootPath": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8DECBB38-B99E-407C-8A1C-511ED09CD503}|Presentation\\ETicaretServer.API\\ETicaretServer.API.csproj|D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\presentation\\eticaretserver.api\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8DECBB38-B99E-407C-8A1C-511ED09CD503}|Presentation\\ETicaretServer.API\\ETicaretServer.API.csproj|d:\\code\\csharp\\eticaretapp\\eticaretserver\\presentation\\eticaretserver.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DECBB38-B99E-407C-8A1C-511ED09CD503}|Presentation\\ETicaretServer.API\\ETicaretServer.API.csproj|solutionrelative:presentation\\eticaretserver.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DECBB38-B99E-407C-8A1C-511ED09CD503}|Presentation\\ETicaretServer.API\\ETicaretServer.API.csproj|d:\\code\\csharp\\eticaretapp\\eticaretserver\\presentation\\eticaretserver.api\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8DECBB38-B99E-407C-8A1C-511ED09CD503}|Presentation\\ETicaretServer.API\\ETicaretServer.API.csproj|solutionrelative:presentation\\eticaretserver.api\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8DECBB38-B99E-407C-8A1C-511ED09CD503}|Presentation\\ETicaretServer.API\\ETicaretServer.API.csproj|d:\\code\\csharp\\eticaretapp\\eticaretserver\\presentation\\eticaretserver.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{8DECBB38-B99E-407C-8A1C-511ED09CD503}|Presentation\\ETicaretServer.API\\ETicaretServer.API.csproj|D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\presentation\\eticaretserver.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{8DECBB38-B99E-407C-8A1C-511ED09CD503}|Presentation\\ETicaretServer.API\\ETicaretServer.API.csproj|solutionrelative:presentation\\eticaretserver.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
@@ -47,19 +51,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Presentation\\ETicaretServer.API\\Program.cs",
+              "RelativeDocumentMoniker": "Presentation\\ETicaretServer.API\\Program.cs",
+              "ToolTip": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Presentation\\ETicaretServer.API\\Program.cs",
+              "RelativeToolTip": "Presentation\\ETicaretServer.API\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T01:37:11.573Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "ProductsController.cs",
               "DocumentMoniker": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Presentation\\ETicaretServer.API\\Controllers\\ProductsController.cs",
               "RelativeDocumentMoniker": "Presentation\\ETicaretServer.API\\Controllers\\ProductsController.cs",
               "ToolTip": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Presentation\\ETicaretServer.API\\Controllers\\ProductsController.cs",
               "RelativeToolTip": "Presentation\\ETicaretServer.API\\Controllers\\ProductsController.cs",
-              "ViewState": "AQIAADkAAAAAAAAAAAA1wEMAAAA7AAAA",
+              "ViewState": "AQIAADkAAAAAAAAAAAA1wEcAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-04T01:31:58.102Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Presentation\\ETicaretServer.API\\appsettings.json",
               "RelativeDocumentMoniker": "Presentation\\ETicaretServer.API\\appsettings.json",
@@ -67,8 +84,7 @@
               "RelativeToolTip": "Presentation\\ETicaretServer.API\\appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAADNAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-04T01:30:59.531Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-04T01:30:59.531Z"
             }
           ]
         }
