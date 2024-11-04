@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8DECBB38-B99E-407C-8A1C-511ED09CD503}|Presentation\\ETicaretServer.API\\ETicaretServer.API.csproj|D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\presentation\\eticaretserver.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{74713FF0-2A03-4EAF-B5F5-F1F3F2542B12}|Infrastructure\\ETicaretServer.Infrastructure\\ETicaretServer.Infrastructure.csproj|D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\infrastructure\\eticaretserver.infrastructure\\services\\storage\\azure\\azurestorage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74713FF0-2A03-4EAF-B5F5-F1F3F2542B12}|Infrastructure\\ETicaretServer.Infrastructure\\ETicaretServer.Infrastructure.csproj|solutionrelative:infrastructure\\eticaretserver.infrastructure\\services\\storage\\azure\\azurestorage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74713FF0-2A03-4EAF-B5F5-F1F3F2542B12}|Infrastructure\\ETicaretServer.Infrastructure\\ETicaretServer.Infrastructure.csproj|D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\infrastructure\\eticaretserver.infrastructure\\services\\storage\\local\\localstorage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74713FF0-2A03-4EAF-B5F5-F1F3F2542B12}|Infrastructure\\ETicaretServer.Infrastructure\\ETicaretServer.Infrastructure.csproj|solutionrelative:infrastructure\\eticaretserver.infrastructure\\services\\storage\\local\\localstorage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DECBB38-B99E-407C-8A1C-511ED09CD503}|Presentation\\ETicaretServer.API\\ETicaretServer.API.csproj|d:\\code\\csharp\\eticaretapp\\eticaretserver\\presentation\\eticaretserver.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8DECBB38-B99E-407C-8A1C-511ED09CD503}|Presentation\\ETicaretServer.API\\ETicaretServer.API.csproj|solutionrelative:presentation\\eticaretserver.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{74713FF0-2A03-4EAF-B5F5-F1F3F2542B12}|Infrastructure\\ETicaretServer.Infrastructure\\ETicaretServer.Infrastructure.csproj|d:\\code\\csharp\\eticaretapp\\eticaretserver\\infrastructure\\eticaretserver.infrastructure\\services\\storage\\storageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{74713FF0-2A03-4EAF-B5F5-F1F3F2542B12}|Infrastructure\\ETicaretServer.Infrastructure\\ETicaretServer.Infrastructure.csproj|D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\infrastructure\\eticaretserver.infrastructure\\services\\storage\\storageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{74713FF0-2A03-4EAF-B5F5-F1F3F2542B12}|Infrastructure\\ETicaretServer.Infrastructure\\ETicaretServer.Infrastructure.csproj|solutionrelative:infrastructure\\eticaretserver.infrastructure\\services\\storage\\storageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{74713FF0-2A03-4EAF-B5F5-F1F3F2542B12}|Infrastructure\\ETicaretServer.Infrastructure\\ETicaretServer.Infrastructure.csproj|d:\\code\\csharp\\eticaretapp\\eticaretserver\\infrastructure\\eticaretserver.infrastructure\\services\\storage\\azure\\azurestorage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{74713FF0-2A03-4EAF-B5F5-F1F3F2542B12}|Infrastructure\\ETicaretServer.Infrastructure\\ETicaretServer.Infrastructure.csproj|solutionrelative:infrastructure\\eticaretserver.infrastructure\\services\\storage\\azure\\azurestorage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8DECBB38-B99E-407C-8A1C-511ED09CD503}|Presentation\\ETicaretServer.API\\ETicaretServer.API.csproj|D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\presentation\\eticaretserver.api\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -21,10 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{74713FF0-2A03-4EAF-B5F5-F1F3F2542B12}|Infrastructure\\ETicaretServer.Infrastructure\\ETicaretServer.Infrastructure.csproj|D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\infrastructure\\eticaretserver.infrastructure\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{74713FF0-2A03-4EAF-B5F5-F1F3F2542B12}|Infrastructure\\ETicaretServer.Infrastructure\\ETicaretServer.Infrastructure.csproj|solutionrelative:infrastructure\\eticaretserver.infrastructure\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{74713FF0-2A03-4EAF-B5F5-F1F3F2542B12}|Infrastructure\\ETicaretServer.Infrastructure\\ETicaretServer.Infrastructure.csproj|D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\infrastructure\\eticaretserver.infrastructure\\services\\storage\\local\\localstorage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{74713FF0-2A03-4EAF-B5F5-F1F3F2542B12}|Infrastructure\\ETicaretServer.Infrastructure\\ETicaretServer.Infrastructure.csproj|solutionrelative:infrastructure\\eticaretserver.infrastructure\\services\\storage\\local\\localstorage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2694CBC5-2D5A-4B60-A8CB-A4EF29AC16F2}|Core\\ETicaretServer.Application\\ETicaretServer.Application.csproj|D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\core\\eticaretserver.application\\abstractions\\storage\\istorage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -50,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 12,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -78,7 +78,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "StorageService.cs",
               "DocumentMoniker": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Infrastructure\\ETicaretServer.Infrastructure\\Services\\Storage\\StorageService.cs",
               "RelativeDocumentMoniker": "Infrastructure\\ETicaretServer.Infrastructure\\Services\\Storage\\StorageService.cs",
@@ -86,12 +86,11 @@
               "RelativeToolTip": "Infrastructure\\ETicaretServer.Infrastructure\\Services\\Storage\\StorageService.cs",
               "ViewState": "AQIAABkAAAAAAAAAAIAxwB4AAABLAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T11:56:35.121Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-04T11:56:35.121Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "ServiceRegistration.cs",
               "DocumentMoniker": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Infrastructure\\ETicaretServer.Infrastructure\\ServiceRegistration.cs",
               "RelativeDocumentMoniker": "Infrastructure\\ETicaretServer.Infrastructure\\ServiceRegistration.cs",
@@ -103,25 +102,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "LocalStorage.cs",
               "DocumentMoniker": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Infrastructure\\ETicaretServer.Infrastructure\\Services\\Storage\\Local\\LocalStorage.cs",
               "RelativeDocumentMoniker": "Infrastructure\\ETicaretServer.Infrastructure\\Services\\Storage\\Local\\LocalStorage.cs",
               "ToolTip": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Infrastructure\\ETicaretServer.Infrastructure\\Services\\Storage\\Local\\LocalStorage.cs",
               "RelativeToolTip": "Infrastructure\\ETicaretServer.Infrastructure\\Services\\Storage\\Local\\LocalStorage.cs",
-              "ViewState": "AQIAACUAAAAAAAAAAAAUwBEAAAAJAAAA",
+              "ViewState": "AQIAAC4AAAAAAAAAAAAUwDgAAABOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T01:41:42.204Z"
+              "WhenOpened": "2024-11-04T01:41:42.204Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "AzureStorage.cs",
               "DocumentMoniker": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Infrastructure\\ETicaretServer.Infrastructure\\Services\\Storage\\Azure\\AzureStorage.cs",
               "RelativeDocumentMoniker": "Infrastructure\\ETicaretServer.Infrastructure\\Services\\Storage\\Azure\\AzureStorage.cs",
               "ToolTip": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Infrastructure\\ETicaretServer.Infrastructure\\Services\\Storage\\Azure\\AzureStorage.cs",
               "RelativeToolTip": "Infrastructure\\ETicaretServer.Infrastructure\\Services\\Storage\\Azure\\AzureStorage.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAiwCwAAABFAAAA",
+              "ViewState": "AQIAABYAAAAAAAAAAAAIwCUAAABQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-04T01:40:16.36Z",
               "EditorCaption": ""
@@ -152,20 +152,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Presentation\\ETicaretServer.API\\Program.cs",
               "RelativeDocumentMoniker": "Presentation\\ETicaretServer.API\\Program.cs",
               "ToolTip": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Presentation\\ETicaretServer.API\\Program.cs",
               "RelativeToolTip": "Presentation\\ETicaretServer.API\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAfAAAA",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAABQAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-04T01:37:11.573Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "ProductsController.cs",
               "DocumentMoniker": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Presentation\\ETicaretServer.API\\Controllers\\ProductsController.cs",
               "RelativeDocumentMoniker": "Presentation\\ETicaretServer.API\\Controllers\\ProductsController.cs",
