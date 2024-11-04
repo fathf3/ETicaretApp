@@ -3,3 +3,19 @@
 
 **/apppsettings.json
 /ETicaretServer/Presentation/ETicaretServer.API/appsettings.json
+<<<<<<< HEAD
+/ETicaretServer/Presentation/ETicaretServer.API/bin/
+/ETicaretServer/Presentation/ETicaretServer.API/bin/Debug/net6.0/appsettings.json
+ETicaretServer/Presentation/ETicaretServer.API/bin/Debug/net6.0/appsettings.json
+ETicaretServer/Presentation/ETicaretServer.API/bin
+ETicaretServer/Core/ETicaretServer.Application/bin/Debug/net6.0/ETicaretServer.Application.dll
+ETicaretServer/Core/ETicaretServer.Application/bin/Debug/net6.0/ETicaretServer.Application.dll
+ETicaretServer/Core/ETicaretServer.Application/bin/Debug/net6.0/ETicaretServer.Application.pdb
+/ETicaretServer/Core/ETicaretServer.Application/bin
+=======
+>>>>>>> parent of 2d689858 (Azure Storage Setting)
+/ETicaretServer/Presentation/ETicaretServer.API/bin
+/ETicaretServer/Presentation/ETicaretServer.API/bin
+/ETicaretServer/Presentation/ETicaretServer.API/bin
+/ETicaretServer/Presentation/ETicaretServer.API/bin
+/ETicaretServer/Presentation/ETicaretServer.API/bin

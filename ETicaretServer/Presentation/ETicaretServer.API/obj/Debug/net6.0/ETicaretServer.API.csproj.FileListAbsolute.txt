@@ -55,3 +55,11 @@ D:\Code\CSharp\ETicaretApp\ETicaretServer\Presentation\ETicaretServer.API\bin\De
 D:\Code\CSharp\ETicaretApp\ETicaretServer\Presentation\ETicaretServer.API\bin\Debug\net6.0\ETicaretServer.Infrastructure.dll
 D:\Code\CSharp\ETicaretApp\ETicaretServer\Presentation\ETicaretServer.API\bin\Debug\net6.0\ETicaretServer.Infrastructure.pdb
 D:\Code\CSharp\ETicaretApp\ETicaretServer\Presentation\ETicaretServer.API\bin\Debug\net6.0\ETicaretServer.API.staticwebassets.runtime.json
+D:\Code\CSharp\ETicaretApp\ETicaretServer\Presentation\ETicaretServer.API\bin\Debug\net6.0\Azure.Core.dll
+D:\Code\CSharp\ETicaretApp\ETicaretServer\Presentation\ETicaretServer.API\bin\Debug\net6.0\Azure.Storage.Blobs.dll
+D:\Code\CSharp\ETicaretApp\ETicaretServer\Presentation\ETicaretServer.API\bin\Debug\net6.0\Azure.Storage.Common.dll
+D:\Code\CSharp\ETicaretApp\ETicaretServer\Presentation\ETicaretServer.API\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Code\CSharp\ETicaretApp\ETicaretServer\Presentation\ETicaretServer.API\bin\Debug\net6.0\System.ClientModel.dll
+D:\Code\CSharp\ETicaretApp\ETicaretServer\Presentation\ETicaretServer.API\bin\Debug\net6.0\System.IO.Hashing.dll
+D:\Code\CSharp\ETicaretApp\ETicaretServer\Presentation\ETicaretServer.API\bin\Debug\net6.0\System.Memory.Data.dll
+D:\Code\CSharp\ETicaretApp\ETicaretServer\Presentation\ETicaretServer.API\bin\Debug\net6.0\System.Text.Json.dll
