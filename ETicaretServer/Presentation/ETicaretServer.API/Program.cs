@@ -14,8 +14,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddPersistenceServices(builder.Configuration);
 builder.Services.AddInfrastructureServices();
 
-//builder.Services.AddStorage<LocalStorage>();
-builder.Services.AddStorage<StorageType.Azure>();
+builder.Services.AddStorage<LocalStorage>();
+//builder.Services.AddStorage<StorageType.Azure>();
 
 builder.Services
     .AddCors(options => options
