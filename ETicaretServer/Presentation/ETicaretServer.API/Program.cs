@@ -1,3 +1,4 @@
+using ETicaretServer.Application;
 using ETicaretServer.Application.Validators.Products;
 using ETicaretServer.Infrastructure;
 using ETicaretServer.Infrastructure.Enums;
@@ -14,9 +15,9 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddPersistenceServices(builder.Configuration);
 builder.Services.AddInfrastructureServices();
-
-builder.Services.AddStorage<AzureStorage>();
-//builder.Services.AddStorage<LocalStorage>();
+builder.Services.AddApplicationServices();
+//builder.Services.AddStorage<AzureStorage>();
+builder.Services.AddStorage<LocalStorage>();
 //builder.Services.AddStorage<StorageType.Azure>();
 
 builder.Services
@@ -26,6 +27,8 @@ builder.Services
     .AllowAnyHeader()
     .AllowAnyMethod()
     ));
+
+
 
 
 builder.Services.AddControllers(options => options.Filters.Add<ValidationFilter>()).AddFluentValidation(

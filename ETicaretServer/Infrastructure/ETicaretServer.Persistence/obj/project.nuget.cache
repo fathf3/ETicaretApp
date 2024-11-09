@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Vmqdb3BGQmBYYsP0vyTFGEVmRPY9m1Z2j8I0WXg6lyj1qCjdRWvhAETP6emc8GEaPiTlA4AQCeUeLihAihZ+qA==",
+  "dgSpecHash": "dJZVm4EySKaMl+5CvOngCyt4hrRik0RGyePdYgscRr6v/TNlDsC6ll91vJPYGsdKyI0L+yKmzI2ZSbVKJLE1/Q==",
   "success": true,
   "projectFilePath": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Infrastructure\\ETicaretServer.Persistence\\ETicaretServer.Persistence.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,9 @@
     "C:\\Users\\F3\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
     "C:\\Users\\F3\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.10.0\\fluentvalidation.dependencyinjectionextensions.11.10.0.nupkg.sha512",
     "C:\\Users\\F3\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
+    "C:\\Users\\F3\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
+    "C:\\Users\\F3\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
+    "C:\\Users\\F3\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\10.0.1\\mediatr.extensions.microsoft.dependencyinjection.10.0.1.nupkg.sha512",
     "C:\\Users\\F3\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.35\\microsoft.entityframeworkcore.6.0.35.nupkg.sha512",
     "C:\\Users\\F3\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.35\\microsoft.entityframeworkcore.abstractions.6.0.35.nupkg.sha512",
     "C:\\Users\\F3\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.35\\microsoft.entityframeworkcore.analyzers.6.0.35.nupkg.sha512",
