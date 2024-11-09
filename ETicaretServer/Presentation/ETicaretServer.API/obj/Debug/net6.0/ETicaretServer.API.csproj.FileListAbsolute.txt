@@ -63,3 +63,6 @@ D:\Code\CSharp\ETicaretApp\ETicaretServer\Presentation\ETicaretServer.API\bin\De
 D:\Code\CSharp\ETicaretApp\ETicaretServer\Presentation\ETicaretServer.API\bin\Debug\net6.0\System.IO.Hashing.dll
 D:\Code\CSharp\ETicaretApp\ETicaretServer\Presentation\ETicaretServer.API\bin\Debug\net6.0\System.Memory.Data.dll
 D:\Code\CSharp\ETicaretApp\ETicaretServer\Presentation\ETicaretServer.API\bin\Debug\net6.0\System.Text.Json.dll
+D:\Code\CSharp\ETicaretApp\ETicaretServer\Presentation\ETicaretServer.API\bin\Debug\net6.0\MediatR.dll
+D:\Code\CSharp\ETicaretApp\ETicaretServer\Presentation\ETicaretServer.API\bin\Debug\net6.0\MediatR.Contracts.dll
+D:\Code\CSharp\ETicaretApp\ETicaretServer\Presentation\ETicaretServer.API\bin\Debug\net6.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
