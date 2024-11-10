@@ -1,7 +1,9 @@
 ﻿using ETicaretServer.Application.Abstractions.Storage;
+using ETicaretServer.Application.Abstractions.Token;
 using ETicaretServer.Infrastructure.Enums;
 using ETicaretServer.Infrastructure.Services.Storage;
 using ETicaretServer.Infrastructure.Services.Storage.Local;
+using ETicaretServer.Infrastructure.Services.Token;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace ETicaretServer.Infrastructure
@@ -11,6 +13,7 @@ namespace ETicaretServer.Infrastructure
         public static void AddInfrastructureServices(this IServiceCollection services)
         {
             services.AddScoped<IStorageService, StorageService>();
+            services.AddScoped<ITokenHandler, TokenHandler>();
 
         }
 
