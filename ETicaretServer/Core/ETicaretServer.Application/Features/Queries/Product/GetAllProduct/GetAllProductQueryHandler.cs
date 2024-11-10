@@ -19,6 +19,9 @@ namespace ETicaretServer.Application.Features.Queries.Product.GetAllProduct
 
         public async Task<GetAllProductQueryResponse> Handle(GetAllProductQueryRequest request, CancellationToken cancellationToken)
         {
+            
+            
+
             var totalCount = _productReadRepository
                 .GetAll(false)
                 .Count();
