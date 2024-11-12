@@ -7,6 +7,7 @@ using ETicaretServer.Domain.Entities.Identity;
 using Google.Apis.Auth;
 using MediatR;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
@@ -22,13 +23,15 @@ namespace ETicaretServer.Persistence.Services
         readonly ITokenHandler _tokenHandler;
         IConfiguration _configuration;
         readonly SignInManager<Domain.Entities.Identity.AppUser> _signInManager;
+        readonly IUserService _userService;
 
-        public AuthService(ITokenHandler tokenHandler, UserManager<Domain.Entities.Identity.AppUser> userManager, IConfiguration configuration, SignInManager<AppUser> signInManager)
+        public AuthService(ITokenHandler tokenHandler, UserManager<Domain.Entities.Identity.AppUser> userManager, IConfiguration configuration, SignInManager<AppUser> signInManager, IUserService userService)
         {
             _tokenHandler = tokenHandler;
             _userManager = userManager;
             _configuration = configuration;
             _signInManager = signInManager;
+            _userService = userService;
         }
 
         private async Task<Token> CreateUserExternalAsync(AppUser user, string email, string name, UserLoginInfo userInfo, int accessTokenLifeTime)
@@ -53,7 +56,11 @@ namespace ETicaretServer.Persistence.Services
             if (result)
             {
                 await _userManager.AddLoginAsync(user, userInfo);
-                Token token = _tokenHandler.CreateAccessToken(accessTokenLifeTime);
+                Token token = _tokenHandler.CreateAccessToken(accessTokenLifeTime, user);
+
+                await _userService.UpdateRefreshToken(token.RefreshToken, user, token.Expiration, 40);
+
+
                 return token;
             }
             throw new Exception("Invalid external authentication.");
@@ -84,18 +91,31 @@ namespace ETicaretServer.Persistence.Services
                 user = await _userManager.FindByEmailAsync(usernameOrEmail);
 
             if (user == null)
-                throw new NorFoundUserException();
+                throw new NotFoundUserException();
 
             SignInResult result = await _signInManager.CheckPasswordSignInAsync(user, password, false);
             
             if (result.Succeeded)
             {
-                Token token = _tokenHandler.CreateAccessToken(accessTokenLifeTime);
+                Token token = _tokenHandler.CreateAccessToken(accessTokenLifeTime, user);
+                await _userService.UpdateRefreshToken(token.RefreshToken, user, token.Expiration, 40);
                 return token;
 
             }
            
             throw new AuthenticationErrorException();
+        }
+
+        public async Task<Token> RefreshTokenLoginAsync(string refreshToken)
+        {
+            AppUser? user = await _userManager.Users.FirstOrDefaultAsync(u => u.RefreshToken == refreshToken);
+            if(user != null && user?.RefreshTokenEndDate > DateTime.UtcNow)
+            {
+                Token token =  _tokenHandler.CreateAccessToken(900, user);
+                await _userService.UpdateRefreshToken(token.RefreshToken, user, token.Expiration, 300);
+                return token;
+            }
+            throw new NotFoundUserException();
         }
     }
 }

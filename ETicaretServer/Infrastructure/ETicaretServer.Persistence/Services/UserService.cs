@@ -1,5 +1,6 @@
 ﻿using ETicaretServer.Application.Abstractions.Services;
 using ETicaretServer.Application.DTOs.User;
+using ETicaretServer.Application.Exceptions.AppUser;
 using ETicaretServer.Domain.Entities.Identity;
 using Microsoft.AspNetCore.Identity;
 
@@ -35,6 +36,19 @@ namespace ETicaretServer.Persistence.Services
                     response.Message += $"{error.Code} - {error.Description}";
 
             return response;
+        }
+
+        public async Task UpdateRefreshToken(string refreshToken, AppUser user,DateTime accessTokenDate, int refreshTokenLifeTime)
+        {
+            
+            if(user != null)
+            {
+                user.RefreshToken = refreshToken;
+                user.RefreshTokenEndDate = accessTokenDate.AddSeconds(refreshTokenLifeTime);
+                await _userManager.UpdateAsync(user);
+            }
+            else
+                throw new Exception("Kullanıcı bulunamadı");
         }
     }
 }

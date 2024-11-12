@@ -3,32 +3,16 @@
   "WorkspaceRootPath": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8DECBB38-B99E-407C-8A1C-511ED09CD503}|Presentation\\ETicaretServer.API\\ETicaretServer.API.csproj|d:\\code\\csharp\\eticaretapp\\eticaretserver\\presentation\\eticaretserver.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8DECBB38-B99E-407C-8A1C-511ED09CD503}|Presentation\\ETicaretServer.API\\ETicaretServer.API.csproj|solutionrelative:presentation\\eticaretserver.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2694CBC5-2D5A-4B60-A8CB-A4EF29AC16F2}|Core\\ETicaretServer.Application\\ETicaretServer.Application.csproj|d:\\code\\csharp\\eticaretapp\\eticaretserver\\core\\eticaretserver.application\\features\\commands\\product\\createproduct\\createproductcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2694CBC5-2D5A-4B60-A8CB-A4EF29AC16F2}|Core\\ETicaretServer.Application\\ETicaretServer.Application.csproj|solutionrelative:core\\eticaretserver.application\\features\\commands\\product\\createproduct\\createproductcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2694CBC5-2D5A-4B60-A8CB-A4EF29AC16F2}|Core\\ETicaretServer.Application\\ETicaretServer.Application.csproj|d:\\code\\csharp\\eticaretapp\\eticaretserver\\core\\eticaretserver.application\\exceptions\\appuser\\norfounduserexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2694CBC5-2D5A-4B60-A8CB-A4EF29AC16F2}|Core\\ETicaretServer.Application\\ETicaretServer.Application.csproj|solutionrelative:core\\eticaretserver.application\\exceptions\\appuser\\norfounduserexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F44E2A74-AFC6-4C89-B0C4-05E63E2A2FBE}|Infrastructure\\ETicaretServer.SignalR\\ETicaretServer.SignalR.csproj|D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\infrastructure\\eticaretserver.signalr\\hubs\\producthub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F44E2A74-AFC6-4C89-B0C4-05E63E2A2FBE}|Infrastructure\\ETicaretServer.SignalR\\ETicaretServer.SignalR.csproj|solutionrelative:infrastructure\\eticaretserver.signalr\\hubs\\producthub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2694CBC5-2D5A-4B60-A8CB-A4EF29AC16F2}|Core\\ETicaretServer.Application\\ETicaretServer.Application.csproj|D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\core\\eticaretserver.application\\exceptions\\appuser\\usercreatefailedexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2694CBC5-2D5A-4B60-A8CB-A4EF29AC16F2}|Core\\ETicaretServer.Application\\ETicaretServer.Application.csproj|solutionrelative:core\\eticaretserver.application\\exceptions\\appuser\\usercreatefailedexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2694CBC5-2D5A-4B60-A8CB-A4EF29AC16F2}|Core\\ETicaretServer.Application\\ETicaretServer.Application.csproj|D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\core\\eticaretserver.application\\features\\commands\\appuser\\createuser\\createusercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2694CBC5-2D5A-4B60-A8CB-A4EF29AC16F2}|Core\\ETicaretServer.Application\\ETicaretServer.Application.csproj|solutionrelative:core\\eticaretserver.application\\features\\commands\\appuser\\createuser\\createusercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2694CBC5-2D5A-4B60-A8CB-A4EF29AC16F2}|Core\\ETicaretServer.Application\\ETicaretServer.Application.csproj|D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\core\\eticaretserver.application\\features\\commands\\appuser\\createuser\\createusercommandrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2694CBC5-2D5A-4B60-A8CB-A4EF29AC16F2}|Core\\ETicaretServer.Application\\ETicaretServer.Application.csproj|solutionrelative:core\\eticaretserver.application\\features\\commands\\appuser\\createuser\\createusercommandrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2694CBC5-2D5A-4B60-A8CB-A4EF29AC16F2}|Core\\ETicaretServer.Application\\ETicaretServer.Application.csproj|D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\core\\eticaretserver.application\\features\\commands\\appuser\\loginuser\\loginusercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2694CBC5-2D5A-4B60-A8CB-A4EF29AC16F2}|Core\\ETicaretServer.Application\\ETicaretServer.Application.csproj|solutionrelative:core\\eticaretserver.application\\features\\commands\\appuser\\loginuser\\loginusercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B433245E-887C-4F54-8D55-48365679ABC4}|Infrastructure\\ETicaretServer.Persistence\\ETicaretServer.Persistence.csproj|D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\infrastructure\\eticaretserver.persistence\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B433245E-887C-4F54-8D55-48365679ABC4}|Infrastructure\\ETicaretServer.Persistence\\ETicaretServer.Persistence.csproj|solutionrelative:infrastructure\\eticaretserver.persistence\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F44E2A74-AFC6-4C89-B0C4-05E63E2A2FBE}|Infrastructure\\ETicaretServer.SignalR\\ETicaretServer.SignalR.csproj|D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\infrastructure\\eticaretserver.signalr\\hubservices\\producthubservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F44E2A74-AFC6-4C89-B0C4-05E63E2A2FBE}|Infrastructure\\ETicaretServer.SignalR\\ETicaretServer.SignalR.csproj|solutionrelative:infrastructure\\eticaretserver.signalr\\hubservices\\producthubservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -65,90 +49,49 @@
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{6324226f-61b6-4f28-92ee-18d4b5fe1e48}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Presentation\\ETicaretServer.API\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "Presentation\\ETicaretServer.API\\Controllers\\AuthController.cs",
-              "ToolTip": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Presentation\\ETicaretServer.API\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "Presentation\\ETicaretServer.API\\Controllers\\AuthController.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAiwAAAAAAAAAAA",
+              "Title": "CreateProductCommandHandler.cs",
+              "DocumentMoniker": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Core\\ETicaretServer.Application\\Features\\Commands\\Product\\CreateProduct\\CreateProductCommandHandler.cs",
+              "RelativeDocumentMoniker": "Core\\ETicaretServer.Application\\Features\\Commands\\Product\\CreateProduct\\CreateProductCommandHandler.cs",
+              "ToolTip": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Core\\ETicaretServer.Application\\Features\\Commands\\Product\\CreateProduct\\CreateProductCommandHandler.cs",
+              "RelativeToolTip": "Core\\ETicaretServer.Application\\Features\\Commands\\Product\\CreateProduct\\CreateProductCommandHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T19:46:10.592Z",
+              "WhenOpened": "2024-11-11T21:35:22.841Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "NorFoundUserException.cs",
-              "DocumentMoniker": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Core\\ETicaretServer.Application\\Exceptions\\AppUser\\NorFoundUserException.cs",
-              "RelativeDocumentMoniker": "Core\\ETicaretServer.Application\\Exceptions\\AppUser\\NorFoundUserException.cs",
-              "ToolTip": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Core\\ETicaretServer.Application\\Exceptions\\AppUser\\NorFoundUserException.cs",
-              "RelativeToolTip": "Core\\ETicaretServer.Application\\Exceptions\\AppUser\\NorFoundUserException.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAYwAkAAAAFAAAA",
+              "Title": "ProductHub.cs",
+              "DocumentMoniker": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Infrastructure\\ETicaretServer.SignalR\\Hubs\\ProductHub.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\ETicaretServer.SignalR\\Hubs\\ProductHub.cs",
+              "ToolTip": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Infrastructure\\ETicaretServer.SignalR\\Hubs\\ProductHub.cs",
+              "RelativeToolTip": "Infrastructure\\ETicaretServer.SignalR\\Hubs\\ProductHub.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T19:11:50.052Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-11T21:32:56.237Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "UserCreateFailedException.cs",
-              "DocumentMoniker": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Core\\ETicaretServer.Application\\Exceptions\\AppUser\\UserCreateFailedException.cs",
-              "RelativeDocumentMoniker": "Core\\ETicaretServer.Application\\Exceptions\\AppUser\\UserCreateFailedException.cs",
-              "ToolTip": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Core\\ETicaretServer.Application\\Exceptions\\AppUser\\UserCreateFailedException.cs",
-              "RelativeToolTip": "Core\\ETicaretServer.Application\\Exceptions\\AppUser\\UserCreateFailedException.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "ProductHubService.cs",
+              "DocumentMoniker": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Infrastructure\\ETicaretServer.SignalR\\HubServices\\ProductHubService.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\ETicaretServer.SignalR\\HubServices\\ProductHubService.cs",
+              "ToolTip": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Infrastructure\\ETicaretServer.SignalR\\HubServices\\ProductHubService.cs",
+              "RelativeToolTip": "Infrastructure\\ETicaretServer.SignalR\\HubServices\\ProductHubService.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAWwBkAAABOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T19:11:47.152Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CreateUserCommandHandler.cs",
-              "DocumentMoniker": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Core\\ETicaretServer.Application\\Features\\Commands\\AppUser\\CreateUser\\CreateUserCommandHandler.cs",
-              "RelativeDocumentMoniker": "Core\\ETicaretServer.Application\\Features\\Commands\\AppUser\\CreateUser\\CreateUserCommandHandler.cs",
-              "ToolTip": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Core\\ETicaretServer.Application\\Features\\Commands\\AppUser\\CreateUser\\CreateUserCommandHandler.cs",
-              "RelativeToolTip": "Core\\ETicaretServer.Application\\Features\\Commands\\AppUser\\CreateUser\\CreateUserCommandHandler.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAIwCIAAAArAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T19:11:36.246Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CreateUserCommandRequest.cs",
-              "DocumentMoniker": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Core\\ETicaretServer.Application\\Features\\Commands\\AppUser\\CreateUser\\CreateUserCommandRequest.cs",
-              "RelativeDocumentMoniker": "Core\\ETicaretServer.Application\\Features\\Commands\\AppUser\\CreateUser\\CreateUserCommandRequest.cs",
-              "ToolTip": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Core\\ETicaretServer.Application\\Features\\Commands\\AppUser\\CreateUser\\CreateUserCommandRequest.cs",
-              "RelativeToolTip": "Core\\ETicaretServer.Application\\Features\\Commands\\AppUser\\CreateUser\\CreateUserCommandRequest.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T19:11:35.427Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "LoginUserCommandHandler.cs",
-              "DocumentMoniker": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Core\\ETicaretServer.Application\\Features\\Commands\\AppUser\\LoginUser\\LoginUserCommandHandler.cs",
-              "RelativeDocumentMoniker": "Core\\ETicaretServer.Application\\Features\\Commands\\AppUser\\LoginUser\\LoginUserCommandHandler.cs",
-              "ToolTip": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Core\\ETicaretServer.Application\\Features\\Commands\\AppUser\\LoginUser\\LoginUserCommandHandler.cs",
-              "RelativeToolTip": "Core\\ETicaretServer.Application\\Features\\Commands\\AppUser\\LoginUser\\LoginUserCommandHandler.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAA4wAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T19:11:18.481Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AuthService.cs",
-              "DocumentMoniker": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Infrastructure\\ETicaretServer.Persistence\\Services\\AuthService.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\ETicaretServer.Persistence\\Services\\AuthService.cs",
-              "ToolTip": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Infrastructure\\ETicaretServer.Persistence\\Services\\AuthService.cs",
-              "RelativeToolTip": "Infrastructure\\ETicaretServer.Persistence\\Services\\AuthService.cs",
-              "ViewState": "AQIAAEIAAAAAAAAAAAAowGEAAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T19:10:40.079Z"
+              "WhenOpened": "2024-11-11T21:15:35.636Z"
             }
           ]
         }
