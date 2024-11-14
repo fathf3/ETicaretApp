@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2694CBC5-2D5A-4B60-A8CB-A4EF29AC16F2}|Core\\ETicaretServer.Application\\ETicaretServer.Application.csproj|d:\\code\\csharp\\eticaretapp\\eticaretserver\\core\\eticaretserver.application\\features\\commands\\product\\createproduct\\createproductcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2694CBC5-2D5A-4B60-A8CB-A4EF29AC16F2}|Core\\ETicaretServer.Application\\ETicaretServer.Application.csproj|solutionrelative:core\\eticaretserver.application\\features\\commands\\product\\createproduct\\createproductcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8DECBB38-B99E-407C-8A1C-511ED09CD503}|Presentation\\ETicaretServer.API\\ETicaretServer.API.csproj|d:\\code\\csharp\\eticaretapp\\eticaretserver\\presentation\\eticaretserver.api\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DECBB38-B99E-407C-8A1C-511ED09CD503}|Presentation\\ETicaretServer.API\\ETicaretServer.API.csproj|solutionrelative:presentation\\eticaretserver.api\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F44E2A74-AFC6-4C89-B0C4-05E63E2A2FBE}|Infrastructure\\ETicaretServer.SignalR\\ETicaretServer.SignalR.csproj|D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\infrastructure\\eticaretserver.signalr\\hubs\\producthub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F44E2A74-AFC6-4C89-B0C4-05E63E2A2FBE}|Infrastructure\\ETicaretServer.SignalR\\ETicaretServer.SignalR.csproj|solutionrelative:infrastructure\\eticaretserver.signalr\\hubs\\producthub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F44E2A74-AFC6-4C89-B0C4-05E63E2A2FBE}|Infrastructure\\ETicaretServer.SignalR\\ETicaretServer.SignalR.csproj|D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\infrastructure\\eticaretserver.signalr\\hubservices\\producthubservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F44E2A74-AFC6-4C89-B0C4-05E63E2A2FBE}|Infrastructure\\ETicaretServer.SignalR\\ETicaretServer.SignalR.csproj|solutionrelative:infrastructure\\eticaretserver.signalr\\hubservices\\producthubservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8DECBB38-B99E-407C-8A1C-511ED09CD503}|Presentation\\ETicaretServer.API\\ETicaretServer.API.csproj|d:\\code\\csharp\\eticaretapp\\eticaretserver\\presentation\\eticaretserver.api\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DECBB38-B99E-407C-8A1C-511ED09CD503}|Presentation\\ETicaretServer.API\\ETicaretServer.API.csproj|solutionrelative:presentation\\eticaretserver.api\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -57,41 +53,34 @@
               "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "CreateProductCommandHandler.cs",
-              "DocumentMoniker": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Core\\ETicaretServer.Application\\Features\\Commands\\Product\\CreateProduct\\CreateProductCommandHandler.cs",
-              "RelativeDocumentMoniker": "Core\\ETicaretServer.Application\\Features\\Commands\\Product\\CreateProduct\\CreateProductCommandHandler.cs",
-              "ToolTip": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Core\\ETicaretServer.Application\\Features\\Commands\\Product\\CreateProduct\\CreateProductCommandHandler.cs",
-              "RelativeToolTip": "Core\\ETicaretServer.Application\\Features\\Commands\\Product\\CreateProduct\\CreateProductCommandHandler.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAJAAAA",
+              "Title": "OrdersController.cs",
+              "DocumentMoniker": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Presentation\\ETicaretServer.API\\Controllers\\OrdersController.cs",
+              "RelativeDocumentMoniker": "Presentation\\ETicaretServer.API\\Controllers\\OrdersController.cs",
+              "ToolTip": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Presentation\\ETicaretServer.API\\Controllers\\OrdersController.cs",
+              "RelativeToolTip": "Presentation\\ETicaretServer.API\\Controllers\\OrdersController.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABoAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T21:35:22.841Z",
+              "WhenOpened": "2024-11-14T00:18:53.273Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ProductHub.cs",
-              "DocumentMoniker": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Infrastructure\\ETicaretServer.SignalR\\Hubs\\ProductHub.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\ETicaretServer.SignalR\\Hubs\\ProductHub.cs",
-              "ToolTip": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Infrastructure\\ETicaretServer.SignalR\\Hubs\\ProductHub.cs",
-              "RelativeToolTip": "Infrastructure\\ETicaretServer.SignalR\\Hubs\\ProductHub.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAIAAAA",
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Presentation\\ETicaretServer.API\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "Presentation\\ETicaretServer.API\\Controllers\\ProductsController.cs",
+              "ToolTip": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Presentation\\ETicaretServer.API\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "Presentation\\ETicaretServer.API\\Controllers\\ProductsController.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T21:32:56.237Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ProductHubService.cs",
-              "DocumentMoniker": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Infrastructure\\ETicaretServer.SignalR\\HubServices\\ProductHubService.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\ETicaretServer.SignalR\\HubServices\\ProductHubService.cs",
-              "ToolTip": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Infrastructure\\ETicaretServer.SignalR\\HubServices\\ProductHubService.cs",
-              "RelativeToolTip": "Infrastructure\\ETicaretServer.SignalR\\HubServices\\ProductHubService.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAWwBkAAABOAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T21:15:35.636Z"
+              "WhenOpened": "2024-11-14T00:18:47.895Z",
+              "EditorCaption": ""
             }
           ]
         }

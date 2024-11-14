@@ -1,6 +1,7 @@
 ﻿using ETicaretServer.Application.Features.Commands.Product.CreateProduct;
 using ETicaretServer.Application.Features.Commands.Product.RemoveProduct;
 using ETicaretServer.Application.Features.Commands.Product.UpdateProduct;
+using ETicaretServer.Application.Features.Commands.ProductImageFile.ChangeShowcaseImage;
 using ETicaretServer.Application.Features.Commands.ProductImageFile.RemoveProductImage;
 using ETicaretServer.Application.Features.Commands.ProductImageFile.UploadProductImage;
 using ETicaretServer.Application.Features.Queries.Product.GetAllProduct;
@@ -88,6 +89,14 @@ namespace ETicaretServer.API.Controllers
 
             return Ok();
 
+        }
+
+        [HttpPut("[action]")]
+        [Authorize(AuthenticationSchemes = "Admin")]
+        public async Task <IActionResult> ChangeShowcaseImage([FromQuery]ChangeShowcaseImageCommandRequest changeShowcaseImageCommandRequest)
+        {
+            ChangeShowcaseImageCommandResponse response = await _mediator.Send(changeShowcaseImageCommandRequest);
+            return Ok();
         }
 
     }
