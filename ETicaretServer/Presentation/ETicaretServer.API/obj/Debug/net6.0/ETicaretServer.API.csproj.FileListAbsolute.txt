@@ -97,3 +97,5 @@ D:\Code\CSharp\ETicaretApp\ETicaretServer\Presentation\ETicaretServer.API\bin\De
 D:\Code\CSharp\ETicaretApp\ETicaretServer\Presentation\ETicaretServer.API\bin\Debug\net6.0\Serilog.Sinks.Debug.dll
 D:\Code\CSharp\ETicaretApp\ETicaretServer\Presentation\ETicaretServer.API\bin\Debug\net6.0\Serilog.Sinks.File.dll
 D:\Code\CSharp\ETicaretApp\ETicaretServer\Presentation\ETicaretServer.API\bin\Debug\net6.0\Serilog.Sinks.Seq.dll
+D:\Code\CSharp\ETicaretApp\ETicaretServer\Presentation\ETicaretServer.API\bin\Debug\net6.0\ETicaretServer.SignalR.dll
+D:\Code\CSharp\ETicaretApp\ETicaretServer\Presentation\ETicaretServer.API\bin\Debug\net6.0\ETicaretServer.SignalR.pdb

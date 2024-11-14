@@ -1,0 +1,8 @@
+﻿using MediatR;
+
+namespace ETicaretServer.Application.Features.Queries.Basket.GetBasketItems
+{
+    public class GetBasketItemsQueryRequest : IRequest<List<GetBasketItemsQueryResponse>>
+    {
+    }
+}
