@@ -54,5 +54,31 @@ namespace ETicaretServer.Persistence.Services
                 .ToListAsync();
 
         }
+
+        public async Task<SingleOrderDto> GetOrderById(string id)
+        {
+            var data = await _orderReadRepository.Table
+                .Include(o => o.Basket)
+                    .ThenInclude(b => b.BasketItems)
+                        .ThenInclude(bi => bi.Product)
+                            .FirstOrDefaultAsync(o => o.Id == Guid.Parse(id));
+
+            return new()
+            {
+                Id = data.Id.ToString(),
+                CreatedDate = data.CreatedDate,
+                OrderCode = data.OrderCode,
+                Address = data.Address,
+                BasketItems = data.Basket.BasketItems.Select(bi => new
+                {
+                    bi.Product.Name,
+                    bi.Product.Price,
+                    bi.Quantity
+                }),
+                Description = data.Description,
+                
+            };
+
+        }
     }
 }
