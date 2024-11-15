@@ -1,6 +1,7 @@
 ﻿using ETicaretServer.Application.Abstractions.Services;
 using ETicaretServer.Application.DTOs.User;
 using ETicaretServer.Application.Exceptions.AppUser;
+using ETicaretServer.Application.Helpers;
 using ETicaretServer.Domain.Entities.Identity;
 using Microsoft.AspNetCore.Identity;
 
@@ -38,10 +39,28 @@ namespace ETicaretServer.Persistence.Services
             return response;
         }
 
-        public async Task UpdateRefreshToken(string refreshToken, AppUser user,DateTime accessTokenDate, int refreshTokenLifeTime)
+        public async Task UpdatePasswordAsync(string userId, string resetToken, string newPassword)
         {
-            
-            if(user != null)
+            AppUser user = await _userManager.FindByIdAsync(userId);
+            if (user != null)
+            {
+                resetToken = resetToken.UrlDecode();
+                IdentityResult result = await _userManager.ResetPasswordAsync(user, resetToken, newPassword);
+                if (result.Succeeded)
+                {
+                    await _userManager.UpdateSecurityStampAsync(user);
+                }
+                else
+                    throw new PasswordChangeFailedException();
+
+
+            }
+        }
+
+        public async Task UpdateRefreshTokenAsync(string refreshToken, AppUser user, DateTime accessTokenDate, int refreshTokenLifeTime)
+        {
+
+            if (user != null)
             {
                 user.RefreshToken = refreshToken;
                 user.RefreshTokenEndDate = accessTokenDate.AddSeconds(refreshTokenLifeTime);

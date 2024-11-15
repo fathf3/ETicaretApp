@@ -6,6 +6,7 @@ using ETicaretServer.Persistence.Contexts;
 using ETicaretServer.Persistence.Repositories;
 using ETicaretServer.Persistence.Repositories.File;
 using ETicaretServer.Persistence.Services;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -26,7 +27,8 @@ namespace ETicaretServer.Persistence
             {
                 options.User.RequireUniqueEmail = true;
 
-            }).AddEntityFrameworkStores<ETicaretAPIDbContext>();
+            }).AddEntityFrameworkStores<ETicaretAPIDbContext>()
+            .AddDefaultTokenProviders(); // Identity uzerinden reset token uretmemizi saglayan servis.
             services.AddScoped<IProductReadRepository, ProductReadRepository>();
             services.AddScoped<IProductWriteRepository, ProductWriteRepository>();
 
