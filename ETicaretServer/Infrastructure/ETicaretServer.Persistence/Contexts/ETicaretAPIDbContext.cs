@@ -25,6 +25,10 @@ namespace ETicaretServer.Persistence.Contexts
         public DbSet<InvoinceFile> InvoinceFiles { get; set; }
         public DbSet<Basket> Baskets { get; set; }
         public DbSet<BasketItem> BasketItems { get; set; }
+        public DbSet<ComplatedOrder> ComplatedOrders { get; set; }
+        public DbSet<Menu> Menus { get; set; }
+        public DbSet<EndPoint> EndPoints { get; set; }
+      
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
@@ -39,6 +43,12 @@ namespace ETicaretServer.Persistence.Contexts
             builder.Entity<Order>()
                 .HasIndex(o => o.OrderCode)
                 .IsUnique();
+
+            builder.Entity<Order>()
+                .HasOne(o => o.ComplatedOrder)
+                .WithOne(c => c.Order)
+                .HasForeignKey<ComplatedOrder>(c => c.OrderId);
+
 
 
             base.OnModelCreating(builder);

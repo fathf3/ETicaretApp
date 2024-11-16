@@ -22,6 +22,21 @@ namespace ETicaretServer.Persistence.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
+            modelBuilder.Entity("AppRoleEndPoint", b =>
+                {
+                    b.Property<string>("AppRolesId")
+                        .HasColumnType("text");
+
+                    b.Property<Guid>("EndPointsId")
+                        .HasColumnType("uuid");
+
+                    b.HasKey("AppRolesId", "EndPointsId");
+
+                    b.HasIndex("EndPointsId");
+
+                    b.ToTable("AppRoleEndPoint");
+                });
+
             modelBuilder.Entity("ETicaretServer.Domain.Entities.Basket", b =>
                 {
                     b.Property<Guid>("Id")
@@ -75,6 +90,29 @@ namespace ETicaretServer.Persistence.Migrations
                     b.ToTable("BasketItems");
                 });
 
+            modelBuilder.Entity("ETicaretServer.Domain.Entities.ComplatedOrder", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<Guid>("OrderId")
+                        .HasColumnType("uuid");
+
+                    b.Property<DateTime>("UpdatedDate")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("OrderId")
+                        .IsUnique();
+
+                    b.ToTable("ComplatedOrders");
+                });
+
             modelBuilder.Entity("ETicaretServer.Domain.Entities.Customer", b =>
                 {
                     b.Property<Guid>("Id")
@@ -94,6 +132,44 @@ namespace ETicaretServer.Persistence.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Customers");
+                });
+
+            modelBuilder.Entity("ETicaretServer.Domain.Entities.EndPoint", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("ActionType")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Code")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("Definition")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("HttpType")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<Guid>("MenuId")
+                        .HasColumnType("uuid");
+
+                    b.Property<DateTime>("UpdatedDate")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("MenuId");
+
+                    b.ToTable("EndPoints");
                 });
 
             modelBuilder.Entity("ETicaretServer.Domain.Entities.File", b =>
@@ -226,6 +302,27 @@ namespace ETicaretServer.Persistence.Migrations
                         .HasDatabaseName("UserNameIndex");
 
                     b.ToTable("AspNetUsers", (string)null);
+                });
+
+            modelBuilder.Entity("ETicaretServer.Domain.Entities.Menu", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<DateTime>("UpdatedDate")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Menus");
                 });
 
             modelBuilder.Entity("ETicaretServer.Domain.Entities.Order", b =>
@@ -427,6 +524,21 @@ namespace ETicaretServer.Persistence.Migrations
                     b.HasDiscriminator().HasValue("ProductImageFile");
                 });
 
+            modelBuilder.Entity("AppRoleEndPoint", b =>
+                {
+                    b.HasOne("ETicaretServer.Domain.Entities.Identity.AppRole", null)
+                        .WithMany()
+                        .HasForeignKey("AppRolesId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("ETicaretServer.Domain.Entities.EndPoint", null)
+                        .WithMany()
+                        .HasForeignKey("EndPointsId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
             modelBuilder.Entity("ETicaretServer.Domain.Entities.Basket", b =>
                 {
                     b.HasOne("ETicaretServer.Domain.Entities.Identity.AppUser", "User")
@@ -455,6 +567,28 @@ namespace ETicaretServer.Persistence.Migrations
                     b.Navigation("Basket");
 
                     b.Navigation("Product");
+                });
+
+            modelBuilder.Entity("ETicaretServer.Domain.Entities.ComplatedOrder", b =>
+                {
+                    b.HasOne("ETicaretServer.Domain.Entities.Order", "Order")
+                        .WithOne("ComplatedOrder")
+                        .HasForeignKey("ETicaretServer.Domain.Entities.ComplatedOrder", "OrderId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Order");
+                });
+
+            modelBuilder.Entity("ETicaretServer.Domain.Entities.EndPoint", b =>
+                {
+                    b.HasOne("ETicaretServer.Domain.Entities.Menu", "Menu")
+                        .WithMany("EndPoints")
+                        .HasForeignKey("MenuId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Menu");
                 });
 
             modelBuilder.Entity("ETicaretServer.Domain.Entities.Order", b =>
@@ -545,6 +679,17 @@ namespace ETicaretServer.Persistence.Migrations
             modelBuilder.Entity("ETicaretServer.Domain.Entities.Identity.AppUser", b =>
                 {
                     b.Navigation("Baskets");
+                });
+
+            modelBuilder.Entity("ETicaretServer.Domain.Entities.Menu", b =>
+                {
+                    b.Navigation("EndPoints");
+                });
+
+            modelBuilder.Entity("ETicaretServer.Domain.Entities.Order", b =>
+                {
+                    b.Navigation("ComplatedOrder")
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("ETicaretServer.Domain.Entities.Product", b =>

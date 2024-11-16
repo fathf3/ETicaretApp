@@ -7,7 +7,9 @@ using System.Threading.Tasks;
 
 namespace ETicaretServer.Application.Features.Queries.Order.GetAllOrders
 {
-    public class GetAllOrderQueryRequest : IRequest<List<GetAllOrderQueryResponse>>
+    public class GetAllOrderQueryRequest : IRequest<GetAllOrderQueryResponse>
     {
+        public int Page { get; set; } = 0;
+        public int Size { get; set; } = 5;
     }
 }

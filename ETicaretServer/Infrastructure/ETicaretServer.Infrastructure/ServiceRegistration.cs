@@ -1,7 +1,9 @@
 ﻿using ETicaretServer.Application.Abstractions.Services;
 using ETicaretServer.Application.Abstractions.Storage;
 using ETicaretServer.Application.Abstractions.Token;
+using ETicaretServer.Application.Configurations;
 using ETicaretServer.Infrastructure.Enums;
+using ETicaretServer.Infrastructure.Services.Configurations;
 using ETicaretServer.Infrastructure.Services.Mail;
 using ETicaretServer.Infrastructure.Services.Storage;
 using ETicaretServer.Infrastructure.Services.Storage.Local;
@@ -17,6 +19,7 @@ namespace ETicaretServer.Infrastructure
             services.AddScoped<IStorageService, StorageService>();
             services.AddScoped<ITokenHandler, TokenHandler>();
             services.AddScoped<IMailService, MailService>();
+            services.AddScoped<IApplicationService, ApplicationService>();
 
         }
 

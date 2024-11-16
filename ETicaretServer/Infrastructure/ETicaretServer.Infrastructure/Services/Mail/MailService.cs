@@ -1,4 +1,5 @@
 ﻿using ETicaretServer.Application.Abstractions.Services;
+using ETicaretServer.Application.DTOs.Order;
 using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
@@ -18,6 +19,8 @@ namespace ETicaretServer.Infrastructure.Services.Mail
         {
             _configuration = configuration;
         }
+
+       
 
         public async Task SendMailAsync(string to, string subject, string body, bool isBodyHtml = true)
         {
@@ -58,5 +61,23 @@ namespace ETicaretServer.Infrastructure.Services.Mail
             await SendMailAsync(to, "Şifre Yenileme Talebi", mail.ToString());
             
         }
+
+        public async Task SendCompletedOrderMailAsync(CompletedOrderDto dto)
+        {
+
+            string mail = $"Sayın {dto.Username} {dto.UserSurname} Merhaba<br>" +
+                $"{dto.OrderDate} tarihinde vermiş olduğunuz  <strong>{dto.OrderCode}</strong> kodlu siparişiniz kargo firmasını teslim edilmiştir. <br>" +
+                $"Kargo Firması : MNG Kargo <br> Kargo Kodu : kargo kod<br>"+
+                $"Bizi tercih ettiğiniz için teşekkürler, İyi günler";
+
+
+
+
+            await SendMailAsync(dto.Mail, $"{dto.OrderCode} 'nolu siparişiniz kargoya teslim edilmiştir. ", mail.ToString());
+
+        }
+
+
+
     }
 }

@@ -3,7 +3,7 @@ using MediatR;
 
 namespace ETicaretServer.Application.Features.Queries.Order.GetAllOrders
 {
-    public class GetAllOrderQueryHandler : IRequestHandler<GetAllOrderQueryRequest, List<GetAllOrderQueryResponse>>
+    public class GetAllOrderQueryHandler : IRequestHandler<GetAllOrderQueryRequest, GetAllOrderQueryResponse>
     {
         readonly IOrderService _orderService;
 
@@ -12,16 +12,15 @@ namespace ETicaretServer.Application.Features.Queries.Order.GetAllOrders
             _orderService = orderService;
         }
 
-        public async Task<List<GetAllOrderQueryResponse>> Handle(GetAllOrderQueryRequest request, CancellationToken cancellationToken)
+        public async Task<GetAllOrderQueryResponse> Handle(GetAllOrderQueryRequest request, CancellationToken cancellationToken)
         {
-            var data = await _orderService.GetAllOrdersAsync();
-            return data.Select(o => new GetAllOrderQueryResponse
+            var data = await _orderService.GetAllOrdersAsync(request.Page, request.Size);
+
+            return new()
             {
-                CreatedDate = o.CreatedDate,
-                OrderCode = o.OrderCode,
-                TotalPrice = o.TotalPrice,
-                Username = o.Username,
-            }).ToList();
+                TotalOrderCount = data.TotalOrderCount,
+                Orders = data.Orders
+            };
 
         }
     }

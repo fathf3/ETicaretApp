@@ -15,7 +15,7 @@ namespace ETicaretServer.Domain.Entities
         // public Guid CustomerId { get; set; } 
         // public Customer Customer { get; set; }
         public Basket Basket { get; set; }
-        
+        public ComplatedOrder ComplatedOrder { get; set; }
         //public ICollection<Product> Products { get; set; }
 
     }

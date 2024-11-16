@@ -9,5 +9,7 @@ namespace ETicaretServer.Domain.Entities.Identity
 {
     public class AppRole : IdentityRole<string>
     {
+        public ICollection<EndPoint> EndPoints { get; set; }
     }
+
 }
