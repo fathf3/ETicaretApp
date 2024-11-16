@@ -5,18 +5,21 @@ Link : https://www.youtube.com/playlist?list=PLQVXoXFVVtp1DFmoTL4cPTWEWiqndKexZ
 Projede kullanılan teknoloji ve yaklaşımlar:
 
 Backend
+<ul>
+  <li>Onion Architecture</li>
+  <li>Entity Framework Core - Code First</li>
+ <li>Sync-Async Repository Design Pattern</li>
+ <li>CQRS-Mediator Pattern</li>
+ <li>Azure BlobStorage & Local Storage Service</li>
+ <li>Mail Service</li>
+ <li>.Net Core Identity With JWT Authentication</li>
+ <li>Google  OAuth2 Authentication</li>
+ <li>Rol Based Access Control</li>
+ <li>Serilog</li>
+ <li>SignalR</li>
+ <li>Global Excaption Handler</li>
+ <li>Table Per Hierarchy Approach</li>
+ <li>FluentValidation</li>
 
-Onion Architecture
-Entity Framework Core - Code First
-Sync-Async Repository Design Pattern
-CQRS-Mediator Pattern
-Azure BlobStorage & Local Storage Service
-Mail Service
-.Net Core Identity With JWT Authentication
-Google  OAuth2 Authentication
-Rol Based Access Control
-Serilog
-SignalR
-Global Excaption Handler
-Table Per Hierarchy Approach
-FluentValidation
+</ul>
+
