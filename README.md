@@ -1,5 +1,6 @@
 
-Sayın Gençay Yıldız Hocamın Youtube Kanalında(https://www.youtube.com/playlist?list=PLQVXoXFVVtp1DFmoTL4cPTWEWiqndKexZ)) Yayınlamış Olduğu .Net Core-Angular eğitim serisidir.
+Sayın Gençay Yıldız Hocamın Youtube Kanalında Yayınlamış Olduğu .Net Core-Angular eğitim serisidir.
+Link : https://www.youtube.com/playlist?list=PLQVXoXFVVtp1DFmoTL4cPTWEWiqndKexZ
 
 Projede kullanılan teknoloji ve yaklaşımlar:
 
