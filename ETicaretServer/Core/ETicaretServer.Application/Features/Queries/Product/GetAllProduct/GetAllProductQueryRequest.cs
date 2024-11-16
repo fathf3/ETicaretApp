@@ -11,6 +11,7 @@ namespace ETicaretServer.Application.Features.Queries.Product.GetAllProduct
     // Gelen Request e hangi nesnenin dondurulecegini belirttik
     public class GetAllProductQueryRequest : IRequest<GetAllProductQueryResponse>
     {
-        public Pagination Pagination { get; set; }
+        public int Page { get; set; } = 0;
+        public int Size { get; set; } = 5;
     }
 }

@@ -3,24 +3,8 @@
   "WorkspaceRootPath": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8DECBB38-B99E-407C-8A1C-511ED09CD503}|Presentation\\ETicaretServer.API\\ETicaretServer.API.csproj|d:\\code\\csharp\\eticaretapp\\eticaretserver\\presentation\\eticaretserver.api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8DECBB38-B99E-407C-8A1C-511ED09CD503}|Presentation\\ETicaretServer.API\\ETicaretServer.API.csproj|solutionrelative:presentation\\eticaretserver.api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8DECBB38-B99E-407C-8A1C-511ED09CD503}|Presentation\\ETicaretServer.API\\ETicaretServer.API.csproj|d:\\code\\csharp\\eticaretapp\\eticaretserver\\presentation\\eticaretserver.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8DECBB38-B99E-407C-8A1C-511ED09CD503}|Presentation\\ETicaretServer.API\\ETicaretServer.API.csproj|solutionrelative:presentation\\eticaretserver.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B433245E-887C-4F54-8D55-48365679ABC4}|Infrastructure\\ETicaretServer.Persistence\\ETicaretServer.Persistence.csproj|d:\\code\\csharp\\eticaretapp\\eticaretserver\\infrastructure\\eticaretserver.persistence\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B433245E-887C-4F54-8D55-48365679ABC4}|Infrastructure\\ETicaretServer.Persistence\\ETicaretServer.Persistence.csproj|solutionrelative:infrastructure\\eticaretserver.persistence\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2694CBC5-2D5A-4B60-A8CB-A4EF29AC16F2}|Core\\ETicaretServer.Application\\ETicaretServer.Application.csproj|d:\\code\\csharp\\eticaretapp\\eticaretserver\\core\\eticaretserver.application\\features\\commands\\appuser\\updatepassword\\updatepasswordcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2694CBC5-2D5A-4B60-A8CB-A4EF29AC16F2}|Core\\ETicaretServer.Application\\ETicaretServer.Application.csproj|solutionrelative:core\\eticaretserver.application\\features\\commands\\appuser\\updatepassword\\updatepasswordcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2694CBC5-2D5A-4B60-A8CB-A4EF29AC16F2}|Core\\ETicaretServer.Application\\ETicaretServer.Application.csproj|d:\\code\\csharp\\eticaretapp\\eticaretserver\\core\\eticaretserver.application\\abstractions\\services\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2694CBC5-2D5A-4B60-A8CB-A4EF29AC16F2}|Core\\ETicaretServer.Application\\ETicaretServer.Application.csproj|solutionrelative:core\\eticaretserver.application\\abstractions\\services\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8DECBB38-B99E-407C-8A1C-511ED09CD503}|Presentation\\ETicaretServer.API\\ETicaretServer.API.csproj|d:\\code\\csharp\\eticaretapp\\eticaretserver\\presentation\\eticaretserver.api\\controllers\\authorizationendpointscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DECBB38-B99E-407C-8A1C-511ED09CD503}|Presentation\\ETicaretServer.API\\ETicaretServer.API.csproj|solutionrelative:presentation\\eticaretserver.api\\controllers\\authorizationendpointscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -70,67 +54,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Presentation\\ETicaretServer.API\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "Presentation\\ETicaretServer.API\\Controllers\\AuthController.cs",
-              "ToolTip": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Presentation\\ETicaretServer.API\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "Presentation\\ETicaretServer.API\\Controllers\\AuthController.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAAAzwDEAAAArAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T11:13:50.839Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AuthService.cs",
-              "DocumentMoniker": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Infrastructure\\ETicaretServer.Persistence\\Services\\AuthService.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\ETicaretServer.Persistence\\Services\\AuthService.cs",
-              "ToolTip": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Infrastructure\\ETicaretServer.Persistence\\Services\\AuthService.cs",
-              "RelativeToolTip": "Infrastructure\\ETicaretServer.Persistence\\Services\\AuthService.cs",
-              "ViewState": "AQIAAEkAAAAAAAAAAAA8wGgAAAA6AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T11:13:34.915Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "UsersController.cs",
-              "DocumentMoniker": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Presentation\\ETicaretServer.API\\Controllers\\UsersController.cs",
-              "RelativeDocumentMoniker": "Presentation\\ETicaretServer.API\\Controllers\\UsersController.cs",
-              "ToolTip": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Presentation\\ETicaretServer.API\\Controllers\\UsersController.cs",
-              "RelativeToolTip": "Presentation\\ETicaretServer.API\\Controllers\\UsersController.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAiwCIAAAAgAAAA",
+              "Title": "AuthorizationEndpointsController.cs",
+              "DocumentMoniker": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Presentation\\ETicaretServer.API\\Controllers\\AuthorizationEndpointsController.cs",
+              "RelativeDocumentMoniker": "Presentation\\ETicaretServer.API\\Controllers\\AuthorizationEndpointsController.cs",
+              "ToolTip": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Presentation\\ETicaretServer.API\\Controllers\\AuthorizationEndpointsController.cs",
+              "RelativeToolTip": "Presentation\\ETicaretServer.API\\Controllers\\AuthorizationEndpointsController.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAxwBsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T11:09:29.023Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UpdatePasswordCommandHandler.cs",
-              "DocumentMoniker": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Core\\ETicaretServer.Application\\Features\\Commands\\AppUser\\UpdatePassword\\UpdatePasswordCommandHandler.cs",
-              "RelativeDocumentMoniker": "Core\\ETicaretServer.Application\\Features\\Commands\\AppUser\\UpdatePassword\\UpdatePasswordCommandHandler.cs",
-              "ToolTip": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Core\\ETicaretServer.Application\\Features\\Commands\\AppUser\\UpdatePassword\\UpdatePasswordCommandHandler.cs",
-              "RelativeToolTip": "Core\\ETicaretServer.Application\\Features\\Commands\\AppUser\\UpdatePassword\\UpdatePasswordCommandHandler.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T11:05:08.84Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IUserService.cs",
-              "DocumentMoniker": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Core\\ETicaretServer.Application\\Abstractions\\Services\\IUserService.cs",
-              "RelativeDocumentMoniker": "Core\\ETicaretServer.Application\\Abstractions\\Services\\IUserService.cs",
-              "ToolTip": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Core\\ETicaretServer.Application\\Abstractions\\Services\\IUserService.cs",
-              "RelativeToolTip": "Core\\ETicaretServer.Application\\Abstractions\\Services\\IUserService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAwAAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T10:53:48.841Z",
+              "WhenOpened": "2024-11-16T21:35:09.799Z",
               "EditorCaption": ""
             }
           ]

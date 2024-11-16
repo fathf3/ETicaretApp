@@ -1,6 +1,6 @@
 ﻿using MediatR;
 
-namespace ETicaretServer.Application.Features.Commands.Order
+namespace ETicaretServer.Application.Features.Commands.Order.CreateOrder
 {
     public class CreateOrderCommandRequest : IRequest<CreateOrderCommandResponse>
     {

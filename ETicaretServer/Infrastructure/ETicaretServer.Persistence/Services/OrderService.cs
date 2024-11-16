@@ -1,6 +1,8 @@
 ﻿using ETicaretServer.Application.Abstractions.Services;
 using ETicaretServer.Application.DTOs.Order;
 using ETicaretServer.Application.Repositories;
+using ETicaretServer.Domain.Entities;
+using ETicaretServer.Persistence.Repositories;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -14,12 +16,18 @@ namespace ETicaretServer.Persistence.Services
     {
         readonly IOrderWriteRepository _orderWriteRepository;
         readonly IOrderReadRepository _orderReadRepository;
+        readonly ICompletedOrdeWriteRepository _completedOrdeWriteRepository;
+        readonly ICompletedOrderReadRepository _completedOrderReadRepository;
 
-        public OrderService(IOrderWriteRepository orderWriteRepository, IOrderReadRepository orderReadRepository)
+        public OrderService(IOrderWriteRepository orderWriteRepository, IOrderReadRepository orderReadRepository, ICompletedOrdeWriteRepository completedOrdeWriteRepository, ICompletedOrderReadRepository completedOrdeReadRepository)
         {
             _orderWriteRepository = orderWriteRepository;
             _orderReadRepository = orderReadRepository;
+            _completedOrdeWriteRepository = completedOrdeWriteRepository;
+            _completedOrderReadRepository = completedOrdeReadRepository;
         }
+
+
 
         public async Task CreateOrderAsync(CreateOrderDto createOrderDto)
         {
@@ -37,22 +45,46 @@ namespace ETicaretServer.Persistence.Services
             await _orderWriteRepository.SaveAsync();
         }
 
-        public async Task<List<ListOrderDto>> GetAllOrdersAsync()
+        public async Task<ListOrderDto> GetAllOrdersAsync(int page, int size)
         {
-           return await _orderReadRepository.Table.Include(o => o.Basket)
-                .ThenInclude(b => b.User)
-                .Include(o => o.Basket)
-                    .ThenInclude(b => b.BasketItems)
-                    .ThenInclude(bi => bi.Product)
-                .Select(o => new ListOrderDto
+            var query = _orderReadRepository.Table.Include(o => o.Basket)
+                        .ThenInclude(b => b.User)
+                        .Include(o => o.Basket)
+                           .ThenInclude(b => b.BasketItems)
+                           .ThenInclude(bi => bi.Product);
+
+
+
+            var data = query.Skip(page * size).Take(size);
+            /*.Take((page * size)..size);*/
+
+
+            var data2 = from order in data
+                        join completedOrder in _completedOrderReadRepository.Table
+                           on order.Id equals completedOrder.OrderId into co
+                        from _co in co.DefaultIfEmpty()
+                        select new
+                        {
+                            Id = order.Id,
+                            CreatedDate = order.CreatedDate,
+                            OrderCode = order.OrderCode,
+                            Basket = order.Basket,
+                            Completed = _co != null ? true : false
+                        };
+
+            return new()
+            {
+                TotalOrderCount = await query.CountAsync(),
+                Orders = await data2.Select(o => new
                 {
+                    Id = o.Id,
                     CreatedDate = o.CreatedDate,
                     OrderCode = o.OrderCode,
-                    TotalPrice = o.Basket.BasketItems.Sum(bi => bi.Product.Price*bi.Quantity),
-                    Username = o.Basket.User.UserName,
-                })
-                .ToListAsync();
-
+                    TotalPrice = o.Basket.BasketItems.Sum(bi => bi.Product.Price * bi.Quantity),
+                    UserName = o.Basket.User.UserName,
+                    o.Completed
+                }).ToListAsync()
+            };
         }
 
         public async Task<SingleOrderDto> GetOrderById(string id)
@@ -80,5 +112,34 @@ namespace ETicaretServer.Persistence.Services
             };
 
         }
+        public async Task<(bool, CompletedOrderDto)> CompletedOrderAsync(string id)
+        {
+            Order? order = await _orderReadRepository.Table
+                .Include(o => o.Basket)
+                .ThenInclude(b => b.User)
+                .FirstOrDefaultAsync(o => o.Id == Guid.Parse(id));
+
+            if (order != null)
+            {
+                await _completedOrdeWriteRepository.AddAsync(new()
+                {
+                    OrderId = Guid.Parse(id),
+                });
+                return (await _completedOrdeWriteRepository.SaveAsync()>0, new()
+                {
+                    OrderCode = order.OrderCode,
+                    OrderDate = order.CreatedDate,
+                    Username = order.Basket.User.UserName,
+                    UserSurname = order.Basket.User.NameSurname,
+                    Mail = order.Basket.User.Email
+                    
+                    
+                });
+                
+            }
+            return (false,null);
+        }
+
+      
     }
 }

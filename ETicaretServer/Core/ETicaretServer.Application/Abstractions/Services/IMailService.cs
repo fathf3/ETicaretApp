@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ETicaretServer.Application.DTOs.Order;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,5 +13,6 @@ namespace ETicaretServer.Application.Abstractions.Services
         Task SendMailAsync(string[] to, string subject, string body, bool isBodyHtml = true);
 
         Task SendPasswordResetMailAsync(string to, string userId, string resetToken);
+        Task SendCompletedOrderMailAsync(CompletedOrderDto dto);
     }
 }

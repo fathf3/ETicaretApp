@@ -8,9 +8,7 @@ namespace ETicaretServer.Application.DTOs.Order
 {
     public class ListOrderDto
     {
-        public string OrderCode { get; set; }
-        public string Username { get; set; }
-        public float TotalPrice { get; set; }
-        public DateTime CreatedDate { get; set; }
+        public int TotalOrderCount { get; set; }
+        public object Orders { get; set; }
     }
 }

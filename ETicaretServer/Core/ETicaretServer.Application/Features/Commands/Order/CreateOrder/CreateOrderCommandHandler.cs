@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ETicaretServer.Application.Features.Commands.Order
+namespace ETicaretServer.Application.Features.Commands.Order.CreateOrder
 {
     public class CreateOrderCommandHandler : IRequestHandler<CreateOrderCommandRequest, CreateOrderCommandResponse>
     {
