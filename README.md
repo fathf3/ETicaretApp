@@ -20,6 +20,8 @@ Backend
  <li>Global Excaption Handler</li>
  <li>Table Per Hierarchy Approach</li>
  <li>FluentValidation</li>
+  <li>Docker</li>
+   <li>PostgreSQL</li>
 
 </ul>
 
