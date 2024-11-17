@@ -1,6 +1,7 @@
 ﻿using ETicaretServer.Application.Abstractions.Storage;
 using ETicaretServer.Application.Repositories;
 using MediatR;
+using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,13 +15,15 @@ namespace ETicaretServer.Application.Features.Commands.ProductImageFile.UploadPr
         readonly IProductReadRepository _productReadRepository;
         readonly IStorageService _storageService;
         readonly IProductImageFileWriteRepository _productImageFileWriteRepository;
+        readonly IConfiguration _configuration;
 
 
-        public UploadProductImageCommandHandler(IProductReadRepository productReadRepository, IStorageService storage, IProductImageFileWriteRepository productImageFileWriteRepository)
+        public UploadProductImageCommandHandler(IProductReadRepository productReadRepository, IStorageService storage, IProductImageFileWriteRepository productImageFileWriteRepository, IConfiguration configuration)
         {
             _productReadRepository = productReadRepository;
             _storageService = storage;
             _productImageFileWriteRepository = productImageFileWriteRepository;
+            _configuration = configuration;
         }
 
         public async Task<UploadProductImageCommandResponse> Handle(UploadProductImageCommandRequest request, CancellationToken cancellationToken)
@@ -28,11 +31,13 @@ namespace ETicaretServer.Application.Features.Commands.ProductImageFile.UploadPr
             var product = await _productReadRepository.GetByIdAsync(request.Id);
 
 
-            List<(string fileName, string pathOrContainerName)> result = await _storageService.UploadAsync("resource/product-images", request.Files);
+            List<(string fileName, string pathOrContainerName)> result = await _storageService.UploadAsync("files", request.Files);
             await _productImageFileWriteRepository.AddRangeAsync(result.Select(d => new Domain.Entities.ProductImageFile
             {
                 FileName = d.fileName,
-                Path = d.pathOrContainerName,
+                // Azure icin ayarlanmistir!
+                Path = _configuration["BaseStorageUrl"]+ d.pathOrContainerName,
+                //Path =  d.pathOrContainerName, // -> local icin bu sekikde wwwroot altine files olarak kayit eder
                 Storage = _storageService.StorageName,
                 Products = new List<Domain.Entities.Product>() { product }
 

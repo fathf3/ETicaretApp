@@ -1,12 +1,14 @@
 ﻿using ETicaretServer.Application.Abstractions.Services;
+using ETicaretServer.Application.CustomAttributes;
+using ETicaretServer.Application.Enums;
+using ETicaretServer.Application.Features.Commands.AppUser.AssignRoleToUser;
 using ETicaretServer.Application.Features.Commands.AppUser.CreateUser;
-using ETicaretServer.Application.Features.Commands.AppUser.GoogleLogin;
-using ETicaretServer.Application.Features.Commands.AppUser.LoginUser;
 using ETicaretServer.Application.Features.Commands.AppUser.UpdatePassword;
+using ETicaretServer.Application.Features.Commands.AuthorizationEndpoint.AssignRoleEndpoint;
+using ETicaretServer.Application.Features.Queries.User.GetAllUsers;
 using MediatR;
-using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using System.Runtime.CompilerServices;
 
 namespace ETicaretServer.API.Controllers
 {
@@ -35,6 +37,22 @@ namespace ETicaretServer.API.Controllers
             return Ok(response);
 
         }
-       
+        [HttpGet]
+        [Authorize(AuthenticationSchemes ="Admin")]
+        [AuthorizeDefinition(Menu = "Users", ActionType = ActionType.Reading, Definition = "Get All Users")]
+        public async Task<IActionResult> GetAllUsers([FromQuery]GetAllUsersQueryRequest getAllOrderQueryRequest)
+        {
+            GetAllUsersQueryResponse response = await _mediator.Send(getAllOrderQueryRequest);
+
+            return Ok(response);
+        }
+        [HttpPost("assign-role-to-user")]
+        [Authorize(AuthenticationSchemes = "Admin")]
+        [AuthorizeDefinition(Menu = "Users", ActionType = ActionType.Writing, Definition = "Assign Role To User")]
+        public async Task<IActionResult> AssignRoleToUser(AssignRoleToUserCommandRequest  assignRoleToUserCommandRequest)
+        {
+            AssignRoleToUserCommandResponse response = await _mediator.Send(assignRoleToUserCommandRequest);
+            return Ok(response);
+        }
     }
 }

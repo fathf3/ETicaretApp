@@ -1,6 +1,10 @@
 {
   "Files": [
     {
+      "Id": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Presentation\\ETicaretServer.API\\wwwroot\\files\\bisiklet.jpg",
+      "PackagePath": "staticwebassets\\files\\bisiklet.jpg"
+    },
+    {
       "Id": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Presentation\\ETicaretServer.API\\wwwroot\\resource\\files\\formFiles",
       "PackagePath": "staticwebassets\\resource\\files"
     },

@@ -1,5 +1,6 @@
 using ETicaretServer.API.Configurations.ColumnWriter;
 using ETicaretServer.API.Extensions;
+using ETicaretServer.API.Filter;
 using ETicaretServer.Application;
 using ETicaretServer.Application.Validators.Products;
 using ETicaretServer.Infrastructure;
@@ -31,8 +32,8 @@ builder.Services.AddInfrastructureServices();
 builder.Services.AddApplicationServices();
 builder.Services.AddSignalRServices();
 
-//builder.Services.AddStorage<AzureStorage>();
-builder.Services.AddStorage<LocalStorage>();
+builder.Services.AddStorage<AzureStorage>();
+//builder.Services.AddStorage<LocalStorage>();
 //builder.Services.AddStorage<StorageType.Azure>();
 
 builder.Services
@@ -84,7 +85,11 @@ Logger log = new LoggerConfiguration()
     .CreateLogger();
 builder.Host.UseSerilog(log);
 
-builder.Services.AddControllers(options => options.Filters.Add<ValidationFilter>()).AddFluentValidation(
+builder.Services.AddControllers(options => {
+    options.Filters.Add<ValidationFilter>();
+    options.Filters.Add<RolePermissionFilter>();
+    })
+    .AddFluentValidation(
     configuration => configuration.RegisterValidatorsFromAssemblyContaining<CreateProductValidator>())
     .ConfigureApiBehaviorOptions(options => options.SuppressModelStateInvalidFilter = true
     );

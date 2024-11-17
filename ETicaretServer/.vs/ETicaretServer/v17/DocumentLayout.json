@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8DECBB38-B99E-407C-8A1C-511ED09CD503}|Presentation\\ETicaretServer.API\\ETicaretServer.API.csproj|d:\\code\\csharp\\eticaretapp\\eticaretserver\\presentation\\eticaretserver.api\\controllers\\authorizationendpointscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8DECBB38-B99E-407C-8A1C-511ED09CD503}|Presentation\\ETicaretServer.API\\ETicaretServer.API.csproj|solutionrelative:presentation\\eticaretserver.api\\controllers\\authorizationendpointscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2694CBC5-2D5A-4B60-A8CB-A4EF29AC16F2}|Core\\ETicaretServer.Application\\ETicaretServer.Application.csproj|d:\\code\\csharp\\eticaretapp\\eticaretserver\\core\\eticaretserver.application\\features\\commands\\productimagefile\\uploadproductimage\\uploadproductimagecommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2694CBC5-2D5A-4B60-A8CB-A4EF29AC16F2}|Core\\ETicaretServer.Application\\ETicaretServer.Application.csproj|solutionrelative:core\\eticaretserver.application\\features\\commands\\productimagefile\\uploadproductimage\\uploadproductimagecommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2694CBC5-2D5A-4B60-A8CB-A4EF29AC16F2}|Core\\ETicaretServer.Application\\ETicaretServer.Application.csproj|d:\\code\\csharp\\eticaretapp\\eticaretserver\\core\\eticaretserver.application\\features\\queries\\product\\getallproduct\\getallproductqueryrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2694CBC5-2D5A-4B60-A8CB-A4EF29AC16F2}|Core\\ETicaretServer.Application\\ETicaretServer.Application.csproj|solutionrelative:core\\eticaretserver.application\\features\\queries\\product\\getallproduct\\getallproductqueryrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DECBB38-B99E-407C-8A1C-511ED09CD503}|Presentation\\ETicaretServer.API\\ETicaretServer.API.csproj|d:\\code\\csharp\\eticaretapp\\eticaretserver\\presentation\\eticaretserver.api\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DECBB38-B99E-407C-8A1C-511ED09CD503}|Presentation\\ETicaretServer.API\\ETicaretServer.API.csproj|solutionrelative:presentation\\eticaretserver.api\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2694CBC5-2D5A-4B60-A8CB-A4EF29AC16F2}|Core\\ETicaretServer.Application\\ETicaretServer.Application.csproj|d:\\code\\csharp\\eticaretapp\\eticaretserver\\core\\eticaretserver.application\\features\\queries\\productimagefile\\getproductimage\\getproductimagesqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2694CBC5-2D5A-4B60-A8CB-A4EF29AC16F2}|Core\\ETicaretServer.Application\\ETicaretServer.Application.csproj|solutionrelative:core\\eticaretserver.application\\features\\queries\\productimagefile\\getproductimage\\getproductimagesqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,15 +66,54 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AuthorizationEndpointsController.cs",
-              "DocumentMoniker": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Presentation\\ETicaretServer.API\\Controllers\\AuthorizationEndpointsController.cs",
-              "RelativeDocumentMoniker": "Presentation\\ETicaretServer.API\\Controllers\\AuthorizationEndpointsController.cs",
-              "ToolTip": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Presentation\\ETicaretServer.API\\Controllers\\AuthorizationEndpointsController.cs",
-              "RelativeToolTip": "Presentation\\ETicaretServer.API\\Controllers\\AuthorizationEndpointsController.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAxwBsAAAAAAAAA",
+              "DocumentIndex": 1,
+              "Title": "GetAllProductQueryRequest.cs",
+              "DocumentMoniker": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Core\\ETicaretServer.Application\\Features\\Queries\\Product\\GetAllProduct\\GetAllProductQueryRequest.cs",
+              "RelativeDocumentMoniker": "Core\\ETicaretServer.Application\\Features\\Queries\\Product\\GetAllProduct\\GetAllProductQueryRequest.cs",
+              "ToolTip": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Core\\ETicaretServer.Application\\Features\\Queries\\Product\\GetAllProduct\\GetAllProductQueryRequest.cs",
+              "RelativeToolTip": "Core\\ETicaretServer.Application\\Features\\Queries\\Product\\GetAllProduct\\GetAllProductQueryRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-16T21:35:09.799Z",
+              "WhenOpened": "2024-11-17T14:24:37.206Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UploadProductImageCommandHandler.cs",
+              "DocumentMoniker": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Core\\ETicaretServer.Application\\Features\\Commands\\ProductImageFile\\UploadProductImage\\UploadProductImageCommandHandler.cs",
+              "RelativeDocumentMoniker": "Core\\ETicaretServer.Application\\Features\\Commands\\ProductImageFile\\UploadProductImage\\UploadProductImageCommandHandler.cs",
+              "ToolTip": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Core\\ETicaretServer.Application\\Features\\Commands\\ProductImageFile\\UploadProductImage\\UploadProductImageCommandHandler.cs",
+              "RelativeToolTip": "Core\\ETicaretServer.Application\\Features\\Commands\\ProductImageFile\\UploadProductImage\\UploadProductImageCommandHandler.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAQwDAAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T14:06:21.773Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GetProductImagesQueryHandler.cs",
+              "DocumentMoniker": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Core\\ETicaretServer.Application\\Features\\Queries\\ProductImageFile\\GetProductImage\\GetProductImagesQueryHandler.cs",
+              "RelativeDocumentMoniker": "Core\\ETicaretServer.Application\\Features\\Queries\\ProductImageFile\\GetProductImage\\GetProductImagesQueryHandler.cs",
+              "ToolTip": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Core\\ETicaretServer.Application\\Features\\Queries\\ProductImageFile\\GetProductImage\\GetProductImagesQueryHandler.cs",
+              "RelativeToolTip": "Core\\ETicaretServer.Application\\Features\\Queries\\ProductImageFile\\GetProductImage\\GetProductImagesQueryHandler.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAywB0AAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T14:05:56.464Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Presentation\\ETicaretServer.API\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "Presentation\\ETicaretServer.API\\Controllers\\ProductsController.cs",
+              "ToolTip": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Presentation\\ETicaretServer.API\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "Presentation\\ETicaretServer.API\\Controllers\\ProductsController.cs",
+              "ViewState": "AQIAAGYAAAAAAAAAAAAowG0AAABUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T14:02:15.826Z",
               "EditorCaption": ""
             }
           ]
