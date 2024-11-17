@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "9YIXjAZytOU7uvv4+CoqC1OvkRrlUHHyL2r4wWqMFVU=",
+  "Hash": "OJ24arjzYm+PMr9BhOAp+ghLjfYaubYXImcEaIFfXsE=",
   "Source": "ETicaretServer.API",
   "BasePath": "_content/ETicaretServer.API",
   "Mode": "Default",
@@ -16,6 +16,25 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Presentation\\ETicaretServer.API\\wwwroot\\files\\bisiklet.jpg",
+      "SourceId": "ETicaretServer.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Presentation\\ETicaretServer.API\\wwwroot\\",
+      "BasePath": "_content/ETicaretServer.API",
+      "RelativePath": "files/bisiklet.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\files\\bisiklet.jpg"
+    },
     {
       "Identity": "D:\\Code\\CSharp\\ETicaretApp\\ETicaretServer\\Presentation\\ETicaretServer.API\\wwwroot\\resource\\files\\formFiles",
       "SourceId": "ETicaretServer.API",

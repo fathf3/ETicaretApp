@@ -13,5 +13,15 @@ namespace ETicaretServer.Application.Abstractions.Services
         Task<CreateUserResponse> CreateAsync(CreateUser model);
         Task UpdateRefreshTokenAsync(string refreshToken, AppUser user, DateTime accessTokenDate, int refreshTokenLifeTime);
         Task UpdatePasswordAsync(string userId, string resetToken, string newPassword);
+        Task<List<ListUser>> GetAllUsersAsync(int page, int size);
+        Task<string[]> GetRolesToUserAsync(string userIdOrName);
+        Task<bool> HasRolePermissionToEndpointAsync(string userName, string code);
+        Task AssignRoleToUser(string userId, string[] roles);
+        int TotalUser();
     }
+
+
+
+
 }
+

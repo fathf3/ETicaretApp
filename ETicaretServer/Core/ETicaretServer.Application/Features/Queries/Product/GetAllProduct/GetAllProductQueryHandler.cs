@@ -35,6 +35,7 @@ namespace ETicaretServer.Application.Features.Queries.Product.GetAllProduct
                     p.CreatedDate,
                     p.UpdatedDate,
                     p.ProductImageFiles
+                   
                 }).ToList();
 
             return new()
