@@ -59,8 +59,9 @@ namespace ETicaretServer.Persistence.Services
             }
             if (result)
             {
+                var userRole = await _userManager.GetRolesAsync(user);
                 await _userManager.AddLoginAsync(user, userInfo);
-                Token token = _tokenHandler.CreateAccessToken(accessTokenLifeTime, user);
+                Token token = _tokenHandler.CreateAccessToken(accessTokenLifeTime, user, userRole);
 
                 await _userService.UpdateRefreshTokenAsync(token.RefreshToken, user, token.Expiration, 40);
 
@@ -98,10 +99,11 @@ namespace ETicaretServer.Persistence.Services
                 throw new NotFoundUserException();
 
             SignInResult result = await _signInManager.CheckPasswordSignInAsync(user, password, false);
+            var userRole = await _userManager.GetRolesAsync(user);
 
             if (result.Succeeded)
             {
-                Token token = _tokenHandler.CreateAccessToken(accessTokenLifeTime, user);
+                Token token = _tokenHandler.CreateAccessToken(accessTokenLifeTime, user, userRole);
                 await _userService.UpdateRefreshTokenAsync(token.RefreshToken, user, token.Expiration, 40);
                 return token;
 
@@ -113,9 +115,11 @@ namespace ETicaretServer.Persistence.Services
         public async Task<Token> RefreshTokenLoginAsync(string refreshToken)
         {
             AppUser? user = await _userManager.Users.FirstOrDefaultAsync(u => u.RefreshToken == refreshToken);
+            
             if (user != null && user?.RefreshTokenEndDate > DateTime.UtcNow)
             {
-                Token token = _tokenHandler.CreateAccessToken(900, user);
+                var userRole = await _userManager.GetRolesAsync(user);
+                Token token = _tokenHandler.CreateAccessToken(900, user, userRole);
                 await _userService.UpdateRefreshTokenAsync(token.RefreshToken, user, token.Expiration, 300);
                 return token;
             }

@@ -52,5 +52,7 @@ namespace ETicaretServer.Persistence.Repositories
                 query = query.AsNoTracking();
             return query;
         }
+
+        public Task<int> GetCount() => Table.CountAsync();
     }
 }

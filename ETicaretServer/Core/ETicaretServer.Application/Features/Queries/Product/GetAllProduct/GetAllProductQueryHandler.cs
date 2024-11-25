@@ -12,36 +12,22 @@ namespace ETicaretServer.Application.Features.Queries.Product.GetAllProduct
 {
     public class GetAllProductQueryHandler : IRequestHandler<GetAllProductQueryRequest, GetAllProductQueryResponse>
     {
-        readonly IProductReadRepository _productReadRepository;
+        readonly IProductService _productService;
 
-        public GetAllProductQueryHandler(IProductReadRepository productReadRepository)
+        public GetAllProductQueryHandler(IProductService productService)
         {
-            _productReadRepository = productReadRepository;
+            _productService = productService;
         }
 
         public async Task<GetAllProductQueryResponse> Handle(GetAllProductQueryRequest request, CancellationToken cancellationToken)
         {
 
-            var totalProductCount = _productReadRepository.GetAll(false).Count();
-
-            var products = _productReadRepository.GetAll(false).Skip(request.Page * request.Size).Take(request.Size)
-                .Include(p => p.ProductImageFiles)
-                .Select(p => new
-                {
-                    p.Id,
-                    p.Name,
-                    p.Stock,
-                    p.Price,
-                    p.CreatedDate,
-                    p.UpdatedDate,
-                    p.ProductImageFiles
-                   
-                }).ToList();
+            var products = await _productService.GetAllProductsAsync(request.Page, request.Size);
 
             return new()
             {
-                Products = products,
-                TotalProductCount = totalProductCount
+                Products = products.Products,
+                TotalProductCount = products.TotalProductCount
             };
         }
     }

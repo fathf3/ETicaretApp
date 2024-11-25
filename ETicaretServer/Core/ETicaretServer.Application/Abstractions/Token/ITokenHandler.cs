@@ -9,7 +9,7 @@ namespace ETicaretServer.Application.Abstractions.Token
 {
     public interface ITokenHandler
     {
-        DTOs.Token CreateAccessToken(int second, AppUser user);
+        DTOs.Token CreateAccessToken(int second, AppUser user, IList<string> userRole);
         string CreateRefreshToken();
     }
 }
