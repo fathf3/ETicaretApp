@@ -4,6 +4,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Security.Claims;
@@ -22,7 +23,7 @@ namespace ETicaretServer.Infrastructure.Services.Token
             _configuration = configuration;
         }
 
-        public Application.DTOs.Token CreateAccessToken(int second, AppUser user)
+        public Application.DTOs.Token CreateAccessToken(int second, AppUser user, IList<string> userRole)
         {
             Application.DTOs.Token token = new();
 
@@ -36,18 +37,26 @@ namespace ETicaretServer.Infrastructure.Services.Token
             // olusturulacak token ayarlarıni belirliyoruz.
 
             token.Expiration = DateTime.UtcNow.AddSeconds(second);
+            var claims = new List<Claim>
+    {
+        new Claim(ClaimTypes.Name, user.UserName), // Kullanıcı ID'si
+        
+    };
+            claims.AddRange(userRole.Select(role => new Claim(ClaimTypes.Role, role)));
             JwtSecurityToken securityToken = new(
                 audience: _configuration["Token:Audience"],
                 issuer: _configuration["Token:Issuer"],
                 expires: token.Expiration,
                 notBefore: DateTime.UtcNow,
                 signingCredentials: signingCredentials,
-                claims: new List<Claim> { new(ClaimTypes.Name, user.UserName)}
+
+                claims: claims
+
                 );
 
             // Token olusturucu sinifindan ornek alalim
             JwtSecurityTokenHandler tokenHandler = new();
-            token.AccessToken =  tokenHandler.WriteToken(securityToken);
+            token.AccessToken = tokenHandler.WriteToken(securityToken);
 
             token.RefreshToken = CreateRefreshToken();
 

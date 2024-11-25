@@ -22,9 +22,10 @@ namespace ETicaretServer.Application.Features.Queries.Basket.GetBasketItems
             var basketItems = await _basketService.GetBasketItemsAsync();
             return basketItems.Select(ba => new GetBasketItemsQueryResponse
             {
-                BasketItemId = ba.Id.ToString(),
-                Name = ba.Product.Name,
-                Price = ba.Product.Price,
+                BasketItemId = ba.BasketItemId,
+                Name = ba.ProductName,
+                ImagePath = ba.ImagePath,
+                Price = ba.Price,
                 Quantity = ba.Quantity,
             }).ToList();
 

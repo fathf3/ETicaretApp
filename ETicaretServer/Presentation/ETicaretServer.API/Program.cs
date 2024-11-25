@@ -63,6 +63,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 
             // JWT uzerinde  name claim e  karsilik gelen degeri User.Identity.Name propertiysinden elde edeilirz.
             NameClaimType = ClaimTypes.Name,
+            RoleClaimType = ClaimTypes.Role,
         };
     });
 

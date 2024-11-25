@@ -28,6 +28,7 @@ namespace ETicaretServer.Application.Features.Commands.AppUser.LoginUser
             return new LoginUserSuccessCommandResponse()
             {
                 Token = token,
+              
             };
 
         }

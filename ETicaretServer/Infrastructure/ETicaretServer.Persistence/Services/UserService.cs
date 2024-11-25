@@ -15,6 +15,7 @@ namespace ETicaretServer.Persistence.Services
         readonly UserManager<AppUser> _userManager;
         readonly IEndpointReadRepository _endpointReadRepository;
 
+
         public UserService(UserManager<AppUser> userManager, IEndpointReadRepository endpointReadRepository)
         {
             _userManager = userManager;
@@ -115,6 +116,7 @@ namespace ETicaretServer.Persistence.Services
             if (appUser != null)
             {
                 var userRoles = await _userManager.GetRolesAsync(appUser);
+                
                 return userRoles.ToArray();
             }
             return new string[] { };

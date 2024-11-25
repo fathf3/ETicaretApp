@@ -15,6 +15,7 @@ namespace ETicaretServer.API.Controllers
     [Route("api/[controller]")]
     [ApiController]
     [Authorize(AuthenticationSchemes = "Admin")]
+    
     public class OrdersController : ControllerBase
     {
         readonly IMediator _mediator;
@@ -34,7 +35,8 @@ namespace ETicaretServer.API.Controllers
 
         [HttpGet]
         [AuthorizeDefinition(Menu = AuthorizeDefinitioonConstants.Orders, ActionType = ActionType.Reading, Definition = "Get All Order")]
-        public async Task<IActionResult> GetAllOrders(GetAllOrderQueryRequest getAllOrderQueryRequest)
+        
+        public async Task<IActionResult> GetAllOrders([FromQuery]GetAllOrderQueryRequest getAllOrderQueryRequest)
         {
             GetAllOrderQueryResponse response = await _mediator.Send(getAllOrderQueryRequest);
             return Ok(response);

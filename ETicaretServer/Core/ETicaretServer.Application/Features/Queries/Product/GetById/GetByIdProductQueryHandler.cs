@@ -1,26 +1,28 @@
-﻿using ETicaretServer.Application.Repositories;
+﻿using ETicaretServer.Application.Abstractions.Services;
+using ETicaretServer.Application.Repositories;
 using MediatR;
+using Microsoft.EntityFrameworkCore;
 using P = ETicaretServer.Domain.Entities;
 namespace ETicaretServer.Application.Features.Queries.Product.GetById
 {
     public class GetByIdProductQueryHandler : IRequestHandler<GetByIdProductQueryRequest, GetByIdProductQueryResponse>
     {
-        readonly IProductReadRepository _productReadRepository;
+        readonly IProductService _productService;
 
-        public GetByIdProductQueryHandler(IProductReadRepository repository)
+        public GetByIdProductQueryHandler(IProductService productService)
         {
-            _productReadRepository = repository;
+            _productService = productService;
         }
 
         public async Task<GetByIdProductQueryResponse> Handle(GetByIdProductQueryRequest request, CancellationToken cancellationToken)
         {
-            P.Product product = await _productReadRepository.GetByIdAsync(request.Id, false);
+
+            var result = await _productService.GetProdctById(request.Id);
             return new()
-            { 
-                Name = product.Name,
-                Price = product.Price,
-                Stock = product.Stock,
+            {
+                Product = result,
             };
+           
         }
     }
 }
