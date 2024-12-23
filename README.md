@@ -24,4 +24,36 @@ Backend
    <li>PostgreSQL</li>
 
 </ul>
+# ETicaret Server
+
+Bu proje, bir e-ticaret uygulamasının backend sunucu tarafını içermektedir.
+
+## Proje Yapısı
+
+Proje, Clean Architecture prensiplerine uygun olarak geliştirilmiştir ve aşağıdaki katmanlardan oluşmaktadır:
+
+- **Core**
+  - ETicaretServer.Application
+  - ETicaretServer.Domain
+- **Infrastructure**
+  - ETicaretServer.Infrastructure
+  - ETicaretServer.Persistence
+- **Presentation**
+  - ETicaretServer.API
+
+## Teknolojiler
+
+- .NET 6.0
+- Entity Framework Core
+- Azure Storage
+- CQRS Pattern
+- MediatR
+- AutoMapper
+- FluentValidation
+
+## Kurulum
+
+1. Projeyi klonlayın
+2. `appsettings.json` dosyasını konfigüre edin
+3. Veritabanı migration'larını çalıştırın:
 
